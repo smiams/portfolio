@@ -29,11 +29,11 @@ gulp.task('images', ['clean'], function() {
 });
 
 gulp.task('bower', ['clean'], function() {
-  gulp.src('./bower_components/foundation/css/normalize.min.css')
-  .pipe(gulp.dest('./build/css'));
-
-  gulp.src('./bower_components/foundation/css/foundation.min.css')
-  .pipe(gulp.dest('./build/css'));
+  // gulp.src('./bower_components/foundation/css/normalize.min.css')
+  // .pipe(gulp.dest('./build/css'));
+  //
+  // gulp.src('./bower_components/foundation/css/foundation.min.css')
+  // .pipe(gulp.dest('./build/css'));
 
   gulp.src('./bower_components/foundation/js/foundation.min.js')
   .pipe(gulp.dest('./build/js'));
