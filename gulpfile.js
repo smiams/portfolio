@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var del = require('del');
 var haml = require('gulp-ruby-haml');
 var sass = require('gulp-ruby-sass');
+var connect = require('gulp-connect');
 
 gulp.task('clean', function () {
   return del('./build/**/*');
@@ -29,11 +30,11 @@ gulp.task('images', ['clean'], function() {
 });
 
 gulp.task('bower', ['clean'], function() {
-  // gulp.src('./bower_components/foundation/css/normalize.min.css')
-  // .pipe(gulp.dest('./build/css'));
-  //
-  // gulp.src('./bower_components/foundation/css/foundation.min.css')
-  // .pipe(gulp.dest('./build/css'));
+  gulp.src('./bower_components/angular/angular.min.js')
+  .pipe(gulp.dest('./build/js'));
+
+  gulp.src('./bower_components/angular-route/angular-route.min.js')
+  .pipe(gulp.dest('./build/js'));
 
   gulp.src('./bower_components/foundation/js/foundation.min.js')
   .pipe(gulp.dest('./build/js'));
@@ -47,13 +48,22 @@ gulp.task('fonts', ['clean'], function() {
   .pipe(gulp.dest('./build/fonts'));
 });
 
-gulp.task('default', ['haml', 'sass', 'js', 'images', 'fonts', 'bower']);
+gulp.task('server', function() {
+  connect.server({
+    root: 'build',
+    livereload: true
+  });
+});
 
-var vent = function(event) {
-  console.log(event.type + " happened to: " + event.path);
-};
+// gulp.task('watch', function () {
+//   gulp.watch('app/**/*', ['haml', 'sass', 'js', 'images', 'fonts', 'bower']);
+// });
+//
+// gulp.task('default', ['server', 'watch']);
 
-gulp.watch('app/**/*', ['default']);
+gulp.task('default', ['haml', 'sass', 'js', 'images', 'fonts', 'bower', 'server']);
+
+gulp.watch('app/**/*', ['haml', 'sass', 'js', 'images', 'fonts', 'bower']);
 
 gulp.watch('app/**/*', function(event) {
   console.log('> > > ' + event.path + ' ' + event.type);
