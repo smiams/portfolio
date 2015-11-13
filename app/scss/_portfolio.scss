@@ -1,0 +1,23 @@
+img.noble-brewer {
+  height: 84px;
+  width: 298px;
+
+  @media #{$small-only} {
+    height: 42px;
+    width: 149px;
+  }
+}
+
+p.company-summary {
+  color: #424242;
+  font-family: 'GandhiSerif';
+  font-style: italic;
+  padding-top: 10px;
+  text-align: center;
+  width: 590px;
+
+  @media #{$small-only} {
+    font-size: 14px;
+    width: 80%;
+  }
+}

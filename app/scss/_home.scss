@@ -1,0 +1,175 @@
+.intro {
+  margin-bottom: 40px;
+  padding: 0 40px 0 40px;
+
+  h3, p {
+    font-family: 'GandhiSerif';
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    color: #919191;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  @media #{$small-only} {
+    h3 { font-size: 22px; }
+    p { font-size: 16px; }
+  }
+
+  @media #{$medium-only} {
+    h3 { font-size: 26px; }
+    p { font-size: 20px; }
+  }
+}
+
+.row.callout-box {
+  background-color: #EBF4FF;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+  padding: 10px 15px 10px 15px;
+
+  @media #{$medium-only} {
+    h4 { font-size: 20px; }
+    p { font-size: 14px; }
+  }
+
+  h4 {
+    font-family: 'SourceSansPro';
+  }
+
+  p {
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  .profile-photo {
+    text-align: center;
+    vertical-align: middle;
+
+    img {
+      display: inline;
+      width: 170px;
+      height: 170px;
+    }
+  }
+}
+
+.row.how {
+  margin-bottom: 30px;
+  margin-top: 50px;
+
+  h3, p {
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: 800;
+  }
+
+  p {
+    font-family: 'GandhiSerif';
+  }
+}
+
+.row.capabilities {
+  margin-bottom: 30px;
+
+  p {
+    font-family: 'GandhiSerif';
+    line-height: 1.4em;
+  }
+
+  @media #{$medium-only} {
+    h4 {
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .section {
+    border-radius: 3px;
+
+    @media #{$small-only} {
+      margin-bottom: 20px;
+    }
+
+    &.active {
+
+    }
+
+    ul.project-list {
+      margin-left: 25px;
+
+      @media #{$medium-up} {
+        display: none;
+      }
+
+      li {
+        font-size: 14px;
+        color: #4A90E2;
+        a {
+          color: #4A90E2;
+          font-weight: 300;
+          strong {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.row.flat-callout-box {
+  @media #{$small-only} {
+    display: none;
+  }
+
+  background-color: #EBF4FF;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  padding: 20px 10px 20px 10px;
+  position: relative;
+
+  .marker {
+    border: 20px solid;
+    border-color: transparent;
+    border-bottom-color: #EBF4FF;
+    height: 0px;
+    top: -40px;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 0px;
+    z-index: 100;
+  }
+
+  h5 {
+    color: #4A90E2;
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+
+  ul {
+    li {
+      font-weight: 300;
+      margin-left: 5px;
+    }
+  }
+}
+

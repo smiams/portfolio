@@ -39,6 +39,9 @@ gulp.task('bower', ['clean'], function() {
   gulp.src('./bower_components/foundation/js/foundation.min.js')
   .pipe(gulp.dest('./build/js'));
 
+  gulp.src('./bower_components/foundation/js/foundation/foundation.equalizer.js')
+  .pipe(gulp.dest('./build/js'));
+
   gulp.src('./bower_components/jquery/dist/jquery.min.js')
   .pipe(gulp.dest('./build/js'));
 });

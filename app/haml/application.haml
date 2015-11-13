@@ -2,9 +2,12 @@
 %html
   %head
     %meta{charset: "utf8"}
+    %meta{name: "viewport", content:"width=device-width"}
+
     %link{rel: "stylesheet", media: "screen", href: "./../css/application.css"}
     %script{src: "./../js/jquery.min.js"}
     %script{src: "./../js/foundation.min.js"}
+    %script{src: "./../js/foundation.equalizer.js"}
     %script{src: "./../js/angular.min.js"}
     %script{src: "./../js/angular-route.min.js"}
 
@@ -15,14 +18,14 @@
           .small-12.medium-6.large-6.columns.title.nowrap
             %h1 Sean Iams
             %h2
-              software designer.
+              software ux designer.
           .small-12.medium-6.large-6.columns.nav
             %ul.primary-nav
               %li{"ng-class" => "activeRoute(0, '')"}
                 %a{"ng-href" => "#!"}
                   HOME
               %li.portfolio{"ng-class" => "activeRoute(0, 'portfolio')"}
-                %a{"ng-href" => "#portfolio/citrine"}
+                %a{"ng-href" => "#portfolio/noble-brewer"}
                   PORTFOLIO
                 .marker{"ng-show" => "activeRoute(0, 'portfolio')"}
               %li{"ng-class" => "activeRoute(0, 'about-me')"}
@@ -35,7 +38,7 @@
         
         .row.bottom{"ng-show" => "activeRoute(0, 'portfolio')"}
           .small-0.medium-6.large-6.columns
-          .small-12.medium-6.large-6.columns
+          .small-12.medium-6.large-6.columns.sub-nav-container
             .portfolio-sub-nav
               %ul
                 %li
@@ -51,9 +54,9 @@
           .small-12.columns
             %hr
 
-    :plain
-      <ng-view></ng-view>
+    .main-content
+      :plain
+        <ng-view></ng-view>
 
-  %script{src: "./../js/application.js"}
-  %script{src: "./../js/application-controller.js"}
-  %script{src: "./../js/home/home-controller.js"}
+  %script{type: "text/javascript", src: "./../js/application.js"}
+  %script{type: "text/javascript", src: "./../js/application-controller.js"}

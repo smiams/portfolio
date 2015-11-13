@@ -4,6 +4,7 @@
 @import 'variables';
 @import 'fonts';
 @import 'mixins';
+@import 'home';
 @import 'portfolio';
 
 body {
@@ -11,12 +12,48 @@ body {
 
   padding: 20px;
 
+  p {
+    line-height: 1.4em;
+  }
+
   .fixed {
     padding: 0 20px 0 20px;
+
+    @media #{$small-only} {
+      padding: 0;
+    }
+
+    .row.top {
+      .nav {
+        @media #{$small-only} {
+          padding: 0 !important;
+        }
+      }
+    }
+
+    .row.bottom {
+      .sub-nav-container {
+        @media #{$small-only} {
+          padding: 0 !important;
+        }
+      }
+    }
   }
 
   p {
     font-weight: 300;
+  }
+
+  .main-content {
+    margin: 0 50px 0 50px;
+
+    @media #{$medium-only} {
+      margin: 0 30px 0 30px;
+    }
+
+    @media #{$small-only} {
+      margin: 0;
+    }
   }
 }
 
@@ -25,7 +62,7 @@ body {
 }
 
 nav {
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.8);
 
   .row.top {
     .title, .nav {
@@ -53,14 +90,22 @@ nav {
     h1 {
       font-size: 38px;
       margin-right: 10px !important;
+
+      @media #{$small-only} {
+        font-size: 30px;
+      }
     }
 
     h2 {
       font-size: 18px;
       font-weight: 300;
 
-      @media #{$medium-down} {
+      @media #{$medium-only} {
         font-size: 16px;
+      }
+
+      @media #{$small-only} {
+        font-size: 12px;
       }
     }
 
