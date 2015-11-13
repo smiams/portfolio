@@ -6,6 +6,11 @@
     font-size: 20px;
     font-weight: 800;
   }
+
+  p {
+    color: #424242;
+    font-family: 'GandhiSerif';
+  }
 }
 
 .row.company-logo {
@@ -16,8 +21,6 @@
   margin-bottom: 30px;
 
   p {
-    color: #424242;
-    font-family: 'GandhiSerif';
     font-style: italic;
     padding-top: 10px;
     text-align: center;
@@ -49,12 +52,6 @@ img.noble-brewer {
   } 
 }
 
-img.stickies-1 {
-  width: 320px;
-  height: 208px;
-
-}
-
 .row.flat-callout-box.process-summary {
   @media #{$small-only} {
     display: block;
@@ -73,9 +70,12 @@ img.stickies-1 {
         font-family: 'SourceSansPro';
         font-size: 18px;
       }
+
       p {
         color: #424242;
-        font-size: 14px;
+        font-family: 'SourceSansPro';
+        font-size: 16px;
+        line-height: 1.4em;
       }
     }
   }
