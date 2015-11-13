@@ -1,3 +1,35 @@
+.project-body {
+  margin-top: 20px;
+
+  h3 {
+    line-height: 1.4em;
+    font-size: 20px;
+    font-weight: 800;
+  }
+}
+
+.row.company-logo {
+  margin-top: 45px;
+}
+
+.row.company-summary {
+  margin-bottom: 30px;
+
+  p {
+    color: #424242;
+    font-family: 'GandhiSerif';
+    font-style: italic;
+    padding-top: 10px;
+    text-align: center;
+    width: 590px;
+
+    @media #{$small-only} {
+      font-size: 14px;
+      width: 80%;
+    }
+  }
+}
+
 img.noble-brewer {
   height: 84px;
   width: 298px;
@@ -8,16 +40,80 @@ img.noble-brewer {
   }
 }
 
-p.company-summary {
-  color: #424242;
-  font-family: 'GandhiSerif';
-  font-style: italic;
-  padding-top: 10px;
-  text-align: center;
-  width: 590px;
+.project-intro {
+  margin-bottom: 20px;
 
+  p {
+    font-family: 'GandhiSerif';
+    line-height: 1.4em;
+  } 
+}
+
+img.stickies-1 {
+  width: 320px;
+  height: 208px;
+
+}
+
+.row.flat-callout-box.process-summary {
   @media #{$small-only} {
-    font-size: 14px;
-    width: 80%;
+    display: block;
+    .marker { display: none; }
+  }
+
+  ol {
+    color: #4A90E2;
+    font-size: 18px;
+    font-family: 'SourceSansPro';
+    list-style-position: inside;
+    margin-left: 0px;
+
+    li {
+      h5 {
+        font-family: 'SourceSansPro';
+        font-size: 18px;
+      }
+      p {
+        color: #424242;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.row.project-details-header {
+  text-align: center;
+}
+
+.row.project-step {
+  text-align: center;
+
+  h4 {
+    line-height: 1.4em;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  
+  p.step-description {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    strong {
+      color: #4A90E2;
+    }
+  }
+}
+
+.image-column {
+  text-align: center;
+
+  img.stickies {
+    width: 298px;
+    height: 224px;
+  }
+
+  img.persona {
+    width: 380px;
+    height: 256px;
   }
 }
