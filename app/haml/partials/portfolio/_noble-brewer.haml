@@ -21,58 +21,66 @@
       %h3
         My Role
       %p
-        I worked with a team of 3 designers to recruit & interview participants, and synthesize the data. I had the most fun leading the 30 minute behavioral interviews.
+        I worked with a team of 3 designers to recruit & interview participants, synthesize the data, and build a researched and validated persona. I had the most fun leading 30 minute behavioral interviews.
 
-  .row.flat-callout-box.process-summary
-    .marker
+  .row.process-summary
     .small-12.columns
-      .row
-        .small-12.medium-8.columns
-          %h4
-            The Process
-          %ol
-            %li
-              %h5
-                Building Provisional Personas
-              %p
-                We built a starting hypothesis in the form of “provisional personas” by brainstorming with the project stakeholders and design team members.
-            %li
-              %h5
-                Recruiting Research Participants
-              %p
-                Using the provisional personas as a guide, we created an online screening survey to assemble a list of exemplary research candidates. We teamed up with the growth team to send the survey to a large group of potential candidates.
-            %li
-              %h5
-                Interviewing Participants
-              %p
-                Qualified participants were lead through a 30-minute interview to gain insight into their needs and behaviors. The objective was get the particpant into a mental and emotional state to feel safe and compelled to share their true convictions.
-            %li
-              %h5
-                Synthesizing Research
-              %p
-                We re-played the audio recordings from the interviews, extracted insights, and created affinity maps to distill common themes. We built validated personas from these affinity maps.
-            %li
-              %h5
-                Recommending
-              %p
-                Additional insights gained in the synthesis process helped us make a few addional design and marketing recommendations.
+      .callout-box
+        .top
+          .marker-container
+            .marker
+        .middle
+          .content-container
+            .row
+              .small-12.medium-8.columns
+                %h4
+                  The Process
+                %ol
+                  %li
+                    %h5
+                      Building Provisional Personas
+                    %p
+                      We built a starting hypothesis in the form of “provisional personas” by brainstorming with the project stakeholders and design team members.
+                  %li
+                    %h5
+                      Recruiting Research Participants
+                    %p
+                      Using the provisional personas as a guide, we created an online screening survey to assemble a list of exemplary research candidates. We teamed up with the growth team to send the survey to a large group of potential candidates.
+                  %li
+                    %h5
+                      Interviewing Participants
+                    %p
+                      Qualified participants were lead through a 30-minute interview to gain insight into their needs and behaviors. The objective was get the participant into a mental and emotional state to feel safe and compelled to share their true convictions.
+                  %li
+                    %h5
+                      Synthesizing Research
+                    %p
+                      We re-played the audio recordings from the interviews, extracted insights, and created affinity maps to distill common themes. We built validated personas from these affinity maps.
+                  %li
+                    %h5
+                      Recommending
+                    %p
+                      Additional insights gained in the synthesis process helped us make a few additional design and marketing recommendations.
 
-        .small-12.medium-4.columns
-          %h4
-            Tools & Techniques
-          %ul
-            %li
-              Behavioral Interviewing
-            %li
-              Personas
-            %li
-              Telephone & Hangouts
-            %li
-              Audio Recorder
-            %li
-              Affinity Mapping
-            %li
-              Sketch
+              .small-12.medium-4.columns
+                %h4
+                  Tools & Techniques
+                %ul.right-list
+                  %li
+                    Behavioral Interviewing
+                  %li
+                    Personas
+                  %li
+                    Telephone & Hangouts
+                  %li
+                    Audio Recorder
+                  %li
+                    Affinity Mapping
+                  %li
+                    Sketch
+
+        .bottom
+
   .row.project-details-header
     .small-12
       %h3
@@ -88,14 +96,432 @@
         and
         %strong
           “Foodie”.
-  .row
+  .row.project-step-details
     .small-12.medium-6.columns.image-column
       %img.stickies{src: "../images/foodie-stickies.png", width: "298", height: "224"}
     .small-12.medium-6.columns.image-column
       %img.persona{src: "../images/foodie-persona-300x202.png", width: "380", height: "256"}
 
-  .row
+  .row.project-step-details
     .small-12.medium-6.columns.image-column
       %img.stickies{src: "../images/beerie-stickies.png", width: "298", height: "224"}
     .small-12.medium-6.columns.image-column
       %img.persona{src: "../images/beerie-persona.png", width: "380", height: "256"}
+
+  .row.project-step
+    .small-12
+      %h4
+        2. Recruiting Research Participants
+      %p.step-description
+        We worked with the Noble Brewer growth team to obtain a list of research participants to interview. We wanted to interview people who would exhibit some of the needs and behaviors characterized in our provisional persona. We also wanted participants who would provide a candid and complete profile of their behavior as it related to purchasing and consuming beer. Qualifying participants were rewarded with a $25.00 Amazon gift card upon completing a 30 minute phone interview.
+
+  .row.project-step
+    .small-12.columns
+      %center
+        .callout-box
+          .top
+            .marker-container.center
+              .marker
+          .middle
+            .content-container
+              .row
+                .small-12.columns
+                  %h4
+                    We wanted participants that:
+                  %ul
+                    %li
+                      Had a desire to explore and take risks in discovering new food and beverage experiences.
+                    %li
+                      Valued sharing culinary-type experiences with others.
+                    %li
+                      Had knowledge and at least some experience and interest in the microbrew or homebrew scene.
+                    %li
+                      Had a desire to learn the intricacies of crafting great food & beverage experiences.
+          .bottom
+
+  .row.sample-screener
+    .small-12.columns
+      .row
+        .small-12.columns
+          %h5 Sample screener survey questions:
+      .row.sample-question
+        .small-12.medium-6.columns
+          .callout-box
+            .top
+            .middle
+              .content-container
+                %p
+                  This is a standard qualifying question. The more times they go out, the more qualified they are.
+              .marker-container
+                .small.marker
+            .bottom
+        .small-12.medium-6.columns
+          .question-title
+            I look for new restaurants and dining experiences:
+          .answer-options
+            %label
+              %input{type: "radio", name: "new-experiences"}
+              rarely.
+            %label
+              %input{type: "radio", name: "new-experiences"}
+              every other week.
+            %label
+              %input{type: "radio", name: "new-experiences"}
+              1 - 2 times per week.
+            %label
+              %input{type: "radio", name: "new-experiences"}
+              3 - 4 times per week.
+            %label
+              %input{type: "radio", name: "new-experiences"}
+              5+ times per week.
+      .row.sample-question
+        .small-12.medium-6.columns
+          .callout-box
+            .top
+            .middle
+              .content-container
+                %p
+                  This question helps qualify the “explorer” mentality.
+              .marker-container
+                .small.marker
+            .bottom
+        .small-12.medium-6.columns
+          .question-title
+            When dining on vacation, I tend to:
+          .answer-options
+            %label
+              %input{type: "checkbox", name: "on-vacation"}
+              venture out to find the best local spot.
+            %label
+              %input{type: "checkbox", name: "on-vacation"}
+              find a high-end restaurant nearby.
+            %label
+              %input{type: "checkbox", name: "on-vacation"}
+              try out the hotel restaurant.
+            %label
+              %input{type: "checkbox", name: "on-vacation"}
+              order room service.
+            %label
+              %input{type: "checkbox", name: "on-vacation"}
+              other
+              %input{type: "text"}
+      .row.sample-question
+        .small-12.medium-6.columns
+          .callout-box
+            .top
+            .middle
+              .content-container
+                %p
+                  This answer could give a very clear signal for enthusiasm, knowledge, and ability to communicate experiences.
+              .marker-container
+                .small.marker
+            .bottom
+        .small-12.medium-6.columns
+          .question-title
+            How comfortable are you in making restaurant recommendations?
+          .answer-options
+            %label
+              %input{type: "radio", name: "recommend"}
+              Super confident.
+            %label
+              %input{type: "radio", name: "recommend"}
+              Confident.
+            %label
+              %input{type: "radio", name: "recommend"}
+              Somewhat confident.
+            %label
+              %input{type: "radio", name: "recommend"}
+              Not confident.
+            %label
+              %input{type: "radio", name: "recommend"}
+              So confident that I'll make a recommendation now!
+              %input{type: "text"}
+
+      .row.sample-question
+        .small-12.medium-6.columns
+          .callout-box
+            .top
+            .middle
+              .content-container
+                %p
+                  This answer helps get an idea of the respondent’s level of desire for quality experiences.
+              .marker-container
+                .small.marker
+            .bottom
+        .small-12.medium-6.columns
+          .question-title
+            I'm comfortable spending the following amount on an entree when dining for pleasure:
+          .answer-options
+            %label
+              %input{type: "radio", name: "spend"}
+              $0 - $19
+            %label
+              %input{type: "radio", name: "spend"}
+              $20 - $49
+            %label
+              %input{type: "radio", name: "spend"}
+              $50 - $74
+            %label
+              %input{type: "radio", name: "spend"}
+              $75 - $99
+            %label
+              %input{type: "radio", name: "spend"}
+              $100 - $249
+            %label
+              %input{type: "radio", name: "spend"}
+              $250+
+      .row.sample-question
+        .small-12.medium-6.columns
+          .callout-box
+            .top
+            .middle
+              .content-container
+                %p
+                  We want participants that drink. Preferably ones that drink beer.
+              .marker-container
+                .small.marker
+            .bottom
+        .small-12.medium-6.columns
+          .question-title
+            I drink:
+          .answer-options
+            %label
+              %input{type: "checkbox", name: "drink"}
+              Wine.
+            %label
+              %input{type: "checkbox", name: "drink"}
+              Sparkling wine or champagne.
+            %label
+              %input{type: "checkbox", name: "drink"}
+              Craft cocktails.
+            %label
+              %input{type: "checkbox", name: "drink"}
+              Spirits.
+            %label
+              %input{type: "checkbox", name: "drink"}
+              Microbrew beer.
+            %label
+              %input{type: "checkbox", name: "drink"}
+              Domestic beer.
+            %label
+              %input{type: "checkbox", name: "drink"}
+              I don't drink alcohol.
+
+      .row.sample-question
+        .small-12.medium-6.columns
+          .callout-box
+            .top
+            .middle
+              .content-container
+                %p
+                  This question has some non-existant publications as answers. Answering these options will disqualify the respondent.
+              .marker-container
+                .small.marker
+            .bottom
+        .small-12.medium-6.columns
+          .question-title
+            I read the following food & beverage publications:
+          .answer-options
+            %label
+              %input{type: "checkbox", name: "read"}
+              Wine Spectator.
+            %label
+              %input{type: "checkbox", name: "read"}
+              Beer Advocate.
+            %label
+              %input{type: "checkbox", name: "read"}
+              Bitten.
+            %label
+              %input{type: "checkbox", name: "read"}
+              Gourmet Spectator
+            %label
+              %input{type: "checkbox", name: "read"}
+              Diner's Journal Daily
+            %label
+              %input{type: "checkbox", name: "read"}
+              Food Maven
+            %label
+              %input{type: "checkbox", name: "read"}
+              All of the above.
+
+      .row.sample-question
+        .small-12.medium-6.columns
+          .callout-box
+            .top
+            .middle
+              .content-container
+                %p
+                  People that can write a few clear and concise sentences sabout their experiences will make for better interviewees. 
+              .marker-container
+                .small.marker
+            .bottom
+        .small-12.medium-6.columns
+          .question-title
+            In a few sentences, please describe your favorite dining experience in the past two weeks.
+          .answer-options
+            %textarea
+
+  .row.project-step
+    .small-12
+      %h4
+        3. Interviewing Participants
+      %p.step-description
+        :plain
+          Getting on the phone and talking to people is the most fun part of this process! We used a good speakerphone, a voice recorder, and some sticky notes. The sticky notes are used for two things: <strong>(1)</strong> as a loose guide in kicking-off the the conversation <strong>(2)</strong> to capture interesting insights to dig into later in the conversation. There was a delicate balance between having a somewhat guided conversation and not leading the interviewee.
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/convo-stickies-1.png", width: "460", height: "300"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.center
+            .small.marker
+          .content-container
+            %h5
+              A flow to get the interviewee into a mental context.
+            %p
+              These questions attempt to mentally put the interviewee into a past situational context. This brings about a more accurate recounting of their true behaviors.
+        .bottom
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/convo-stickies-2.png", width: "460", height: "300"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.center
+            .small.marker
+          .content-container
+            %h5
+              Some topics that I'd like to cover.
+            %p
+              These are beer-related topics that I’d like to weave into the interview to uncover the interviewee’s needs and behaviors as they specifically relate to beer.
+        .bottom
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/convo-stickies-3.png", width: "460", height: "300"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.center
+            .small.marker
+          .content-container
+            %h5
+              Interesting conversational hooks to revisit later in the interview.
+            %p
+              These are some things that came up in the conversation. I didn’t want to interrupt the interviewee’s verbal flow, so I just wrote them on post-its so I could remember to bring them up later on.
+        .bottom
+
+  .row.project-step
+    .small-12
+      %h4
+        4. Synthesizing The Data
+      %p.step-description
+        :plain
+          We replayed the interview recordings to capture the important points on note cards. We then arranged all notes onto a giant affinity map to sort out the important themes. These affinity maps helped us identify seven distinct personality facets that characterized our interviewees. Every individual exhibited a different level of each personality facet.
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img.affinity{src: "../images/affinity-1.png", width: "460", height: "141"}
+      %img.affinity{src: "../images/affinity-2.png", width: "460", height: "228"}
+      %img.affinity{src: "../images/affinity-room.png", width: "460", height: "261"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Synthesized Personality Facets & Behaviors
+            %ol
+              %li
+                %h6
+                  Trendsetter
+                %ul
+                  %li
+                    %p
+                      is quick to share knowledge and insight through conversation and beer sampling
+                  %li
+                    %p
+                      enthusiastically introduces inexperienced beer drinkers to innovative or avant garde recipes
+              %li
+                %h6
+                  Student
+                %ul
+                  %li
+                    %p
+                      builds knowledge to better communicate and catalog experiences
+                  %li
+                    %p
+                      has an appreciation for the art of making great beer
+                  %li
+                    %p
+                      has attempted the home brewing process to gain more appreciation for the craft
+                  %li
+                    %p
+                      knows of unique recipes, ingredients, and techniques in both large-scale craft brewing and home brewing
+
+              %li
+                %h6
+                  Discerning Consumer
+                %ul
+                  %li
+                    %p
+                      has deep knowledge of products currently on the market
+                  %li
+                    %p
+                      drinks beer intentionally by enjoying a product specifically chosen for the mood or situation
+                  %li
+                    %p
+                      is frustrated by uninspiring beer lists that follow market trends rather than offering the best choices
+                  %li
+                    %p
+                      recognizes that everyone's palate is different and sometimes a big-brand beer may be a great choice
+
+
+              %li
+                %h6
+                  Explorer
+                %ul
+                  %li
+                    %p
+                      travels to discover new beers. will sometimes take a trip to a beer festival to discover a town's unique beer culture
+                  %li
+                    %p
+                      enthusiastically tries wildly unique beers and often gives previously disliked beers another try to further refine their taste preferences
+              %li
+                %h6
+                  Patron
+                %ul
+                  %li
+                    %p
+                      knows the local producers and retailers
+                  %li
+                    %p
+                      opts to buy locally
+                  %li
+                    %p
+                      is excited when a beer's inspiration or recipe is tied to the local ecosystem
+                  %li
+                    %p
+                      seeks out beer that triggers nostalgic reminders of a time or place
+
+
+        .bottom
+
+  .row.project-step
+    .small-12
+      %h4
+        5. Validated Persona
+      %p.step-description
+        We distilled the personality facets and key behaviors into a researched and validated persona. This is the profile of an enthusiastic Noble Brewer customer.
+
+  .row.project-step-details
+    .small-12.columns.image-column
+      %img{src: "../images/validated-persona.png", width: "940", height: "592"}

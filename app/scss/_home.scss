@@ -1,9 +1,8 @@
 .intro {
   margin-bottom: 40px;
-  padding: 0 40px 0 40px;
 
   h3, p {
-    font-family: 'GandhiSerif';
+    font-family: $serif;
     text-align: center;
   }
 
@@ -28,40 +27,6 @@
   }
 }
 
-.row.callout-box {
-  background-color: #EBF4FF;
-  border-radius: 3px;
-  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
-  margin-bottom: 30px;
-  padding: 10px 15px 10px 15px;
-
-  @media #{$medium-only} {
-    h4 { font-size: 20px; }
-    p { font-size: 14px; }
-  }
-
-  h4 {
-    font-family: 'SourceSansPro';
-  }
-
-  p {
-    font-family: 'SourceSansPro';
-    font-size: 16px;
-    line-height: 1.4em;
-  }
-
-  .profile-photo {
-    text-align: center;
-    vertical-align: middle;
-
-    img {
-      display: inline;
-      width: 170px;
-      height: 170px;
-    }
-  }
-}
-
 .row.how {
   margin-bottom: 30px;
   margin-top: 50px;
@@ -75,7 +40,7 @@
   }
 
   p {
-    font-family: 'GandhiSerif';
+    font-family: $serif;
   }
 }
 
@@ -83,7 +48,7 @@
   margin-bottom: 30px;
 
   p {
-    font-family: 'GandhiSerif';
+    font-family: $serif;
     line-height: 1.4em;
   }
 

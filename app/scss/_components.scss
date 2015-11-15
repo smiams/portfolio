@@ -1,0 +1,198 @@
+.callout-box {
+  font-family: $sans-serif;
+
+  border-collapse: collapse;
+  border-spacing: 0px;
+  display: table;
+  position: relative;
+
+  .top, .middle, .bottom {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .marker-container, .content-container {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .marker-container {
+    position: relative;
+    vertical-align: middle;
+
+    .marker {
+      border: 20px solid;
+      border-color: transparent;
+      display: inline-block;
+      height: 0px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      vertical-align: bottom;
+      width: 0px;
+
+      @media #{$small-only} {
+        display: none;
+      }
+
+      &.small {
+        border: 10px solid;
+        border-color: transparent;
+      }
+    }
+  }
+
+  .top {
+    .marker-container {
+      &.center {
+        text-align: center;
+        .marker {
+          position: relative;
+          top: 0;
+        }
+      }
+      .marker {
+        border-bottom-color: $light-blue;
+        position: absolute;
+        top: -40px;
+      }
+    }
+  }
+
+  &.right-border {
+    .middle {
+      .content-container {
+        border-right: 2px solid $blue;
+        border-left: none;
+        padding-left: 15px;
+      }
+
+      .marker-container {
+        .marker {
+          border-right-color: $light-blue;
+          border-left-color: transparent;
+        }
+      }
+    } 
+  }
+
+  .middle {
+    box-sizing: auto;
+
+    .marker-container {
+      .marker {
+        border-left-color: $light-blue;
+        position: relative;
+      }
+
+      &.top {
+        vertical-align: initial;
+
+        .marker {
+          top: 10px;
+        }
+      }
+
+      &.center {
+        .marker {
+          top: -10px;
+
+          &.small {
+            top: -5px;
+          }
+        }
+      }
+    }
+
+    .content-container {
+      border-left: 2px solid $blue;
+      background-color: $light-blue;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      padding: 10px 10px 0 10px;
+
+      h4, h5, li, p {
+        font-family: $sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        padding-bottom: 10px;
+      }
+
+      ol, ul {
+        margin-right: 5px;
+      }
+
+      li {
+        margin-bottom: 15px;
+
+        h6 {
+          margin-bottom: 0;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        ul {
+          list-style-type: circle;
+
+          li {
+            margin-bottom: 5px;
+            padding-bottom: 0;
+
+            p {
+              margin-bottom: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+        
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      };
+
+      ul.right-list {
+        li {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    .marker-container {
+      .marker {
+        border-top-color: red;
+        position: absolute;
+        right: 0px;
+      }
+    }
+  }
+
+  .middle {
+    .content {
+      background-color: #EBF4FF;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-left: 2px solid #4A90E2;
+      padding: 10px;
+    }
+  }
+
+}
