@@ -68,6 +68,11 @@ body {
 nav {
   background-color: rgba(255, 255, 255, 0.8);
 
+  .row.top, .row.middle, .row.bottom, .row.footer {
+    margin: 0 !important;
+    max-width: none;
+  }
+
   .row.top {
     .title, .nav {
       height: 60px;
@@ -183,6 +188,10 @@ nav {
   }
 
   .row.middle {
+    .columns {
+      padding: 0 !important;
+    }
+
     hr.divider {
       border: 3px solid #4A90E2;
       border-radius: 2px;
@@ -253,8 +262,13 @@ nav {
   }
 
   .row.footer {
+    .columns {
+      padding: 0 !important;
+    }
+
     hr {
-      border: 1px solid #4A90E2;
+      border: none;
+      border-bottom: 1px solid #4A90E2;
       border-radius: 0;
       margin: 0 !important;
       padding: 0 !important;
