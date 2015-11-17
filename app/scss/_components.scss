@@ -1,7 +1,6 @@
 .callout-box {
   font-family: $sans-serif;
 
-  border-collapse: collapse;
   border-spacing: 0px;
   display: table;
   position: relative;
@@ -47,6 +46,12 @@
 
   .top {
     .marker-container {
+      .marker {
+        border-bottom-color: $light-blue;
+        position: absolute;
+        top: -40px;
+      }
+
       &.center {
         text-align: center;
         .marker {
@@ -54,10 +59,17 @@
           top: 0;
         }
       }
-      .marker {
-        border-bottom-color: $light-blue;
-        position: absolute;
-        top: -40px;
+
+      &.left {
+        .marker {
+          left: 20px;
+        }
+      }
+
+      &.right {
+        .marker {
+          right: 20px;
+        }
       }
     }
   }
@@ -66,6 +78,11 @@
     .middle {
       .content-container {
         border-right: 2px solid $blue;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+
         border-left: none;
         padding-left: 15px;
       }

@@ -12,6 +12,9 @@ gulp.task('haml', ['clean'], function() {
   gulp.src('./app/haml/**/*.haml')
   .pipe(haml())
   .pipe(gulp.dest('./build/html'));
+  gulp.src('./app/index.haml')
+  .pipe(haml())
+  .pipe(gulp.dest('./build'));
 });
 
 gulp.task('sass', ['clean'], function() {

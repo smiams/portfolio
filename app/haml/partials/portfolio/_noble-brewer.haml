@@ -27,7 +27,7 @@
     .small-12.columns
       .callout-box
         .top
-          .marker-container
+          .marker-container.left
             .marker
         .middle
           .content-container
@@ -113,48 +113,28 @@
       %h4
         2. Recruiting Research Participants
       %p.step-description
-        We worked with the Noble Brewer growth team to obtain a list of research participants to interview. We wanted to interview people who would exhibit some of the needs and behaviors characterized in our provisional persona. We also wanted participants who would provide a candid and complete profile of their behavior as it related to purchasing and consuming beer. Qualifying participants were rewarded with a $25.00 Amazon gift card upon completing a 30 minute phone interview.
-
-  .row.project-step
-    .small-12.columns
-      %center
-        .callout-box
-          .top
-            .marker-container.center
-              .marker
-          .middle
-            .content-container
-              .row
-                .small-12.columns
-                  %h4
-                    We wanted participants that:
-                  %ul
-                    %li
-                      Had a desire to explore and take risks in discovering new food and beverage experiences.
-                    %li
-                      Valued sharing culinary-type experiences with others.
-                    %li
-                      Had knowledge and at least some experience and interest in the microbrew or homebrew scene.
-                    %li
-                      Had a desire to learn the intricacies of crafting great food & beverage experiences.
-          .bottom
+        We worked with the Noble Brewer growth team to obtain a list of research participants to interview. We wanted to interview people who would exhibit some of the needs and behaviors characterized in our provisional personas ("Foodie" and "Beer Aficionado"). We also wanted participants who would provide a candid and complete profile of their behavior as it related to purchasing and consuming beer. Qualifying participants were rewarded with a $25.00 Amazon gift card upon completing a 30 minute phone interview.
 
   .row.sample-screener
     .small-12.columns
       .row
         .small-12.columns
-          %h5 Sample screener survey questions:
+          %h5 A few sample questions from the online "Foodie" screener:
+      .row
+        .small-12.columns
+          .screener-summary
+            %h5
+              We wanted participants that:
+            %ul
+              %li
+                Had a desire to explore and take risks in discovering new food and beverage experiences.
+              %li
+                Valued sharing culinary-type experiences with others.
+              %li
+                Had knowledge and at least some experience and interest in the microbrew or homebrew scene.
+              %li
+                Had a desire to learn the intricacies of crafting great food & beverage experiences.
       .row.sample-question
-        .small-12.medium-6.columns
-          .callout-box
-            .top
-            .middle
-              .content-container
-                %p
-                  This is a standard qualifying question. The more times they go out, the more qualified they are.
-              .marker-container
-                .small.marker
-            .bottom
         .small-12.medium-6.columns
           .question-title
             I look for new restaurants and dining experiences:
@@ -174,17 +154,18 @@
             %label
               %input{type: "radio", name: "new-experiences"}
               5+ times per week.
-      .row.sample-question
         .small-12.medium-6.columns
-          .callout-box
+          .callout-box.right-border
             .top
             .middle
+              .marker-container.center
+                .small.marker
               .content-container
                 %p
-                  This question helps qualify the “explorer” mentality.
-              .marker-container
-                .small.marker
+                  This is a standard qualifying question. The more they go out, the more qualified they are.
             .bottom
+
+      .row.sample-question
         .small-12.medium-6.columns
           .question-title
             When dining on vacation, I tend to:
@@ -205,17 +186,18 @@
               %input{type: "checkbox", name: "on-vacation"}
               other
               %input{type: "text"}
-      .row.sample-question
         .small-12.medium-6.columns
-          .callout-box
+          .callout-box.right-border
             .top
             .middle
-              .content-container
-                %p
-                  This answer could give a very clear signal for enthusiasm, knowledge, and ability to communicate experiences.
               .marker-container
                 .small.marker
+              .content-container
+                %p
+                  This question helps qualify the “explorer” mentality.
             .bottom
+
+      .row.sample-question
         .small-12.medium-6.columns
           .question-title
             How comfortable are you in making restaurant recommendations?
@@ -236,18 +218,18 @@
               %input{type: "radio", name: "recommend"}
               So confident that I'll make a recommendation now!
               %input{type: "text"}
-
-      .row.sample-question
         .small-12.medium-6.columns
-          .callout-box
+          .callout-box.right-border
             .top
             .middle
-              .content-container
-                %p
-                  This answer helps get an idea of the respondent’s level of desire for quality experiences.
               .marker-container
                 .small.marker
+              .content-container
+                %p
+                  This answer could give a very clear signal for enthusiasm, knowledge, and ability to communicate experiences.
             .bottom
+
+      .row.sample-question
         .small-12.medium-6.columns
           .question-title
             I'm comfortable spending the following amount on an entree when dining for pleasure:
@@ -270,17 +252,18 @@
             %label
               %input{type: "radio", name: "spend"}
               $250+
-      .row.sample-question
         .small-12.medium-6.columns
-          .callout-box
+          .callout-box.right-border
             .top
             .middle
-              .content-container
-                %p
-                  We want participants that drink. Preferably ones that drink beer.
               .marker-container
                 .small.marker
+              .content-container
+                %p
+                  This answer helps get an idea of the respondent’s level of desire for quality experiences.
             .bottom
+
+      .row.sample-question
         .small-12.medium-6.columns
           .question-title
             I drink:
@@ -306,18 +289,18 @@
             %label
               %input{type: "checkbox", name: "drink"}
               I don't drink alcohol.
-
-      .row.sample-question
         .small-12.medium-6.columns
-          .callout-box
+          .callout-box.right-border
             .top
             .middle
-              .content-container
-                %p
-                  This question has some non-existant publications as answers. Answering these options will disqualify the respondent.
               .marker-container
                 .small.marker
+              .content-container
+                %p
+                  We want participants that drink. Preferably ones that drink beer.
             .bottom
+
+      .row.sample-question
         .small-12.medium-6.columns
           .question-title
             I read the following food & beverage publications:
@@ -343,23 +326,33 @@
             %label
               %input{type: "checkbox", name: "read"}
               All of the above.
-
-      .row.sample-question
         .small-12.medium-6.columns
-          .callout-box
+          .callout-box.right-border
             .top
             .middle
-              .content-container
-                %p
-                  People that can write a few clear and concise sentences sabout their experiences will make for better interviewees. 
               .marker-container
                 .small.marker
+              .content-container
+                %p
+                  This question has some non-existant publications as answers. Answering these options will disqualify the respondent.
             .bottom
+
+      .row.sample-question
         .small-12.medium-6.columns
           .question-title
             In a few sentences, please describe your favorite dining experience in the past two weeks.
           .answer-options
             %textarea
+        .small-12.medium-6.columns
+          .callout-box.right-border
+            .top
+            .middle
+              .marker-container
+                .small.marker
+              .content-container
+                %p
+                  People that can write a few clear and concise sentences sabout their experiences will make for better interviewees. 
+            .bottom
 
   .row.project-step
     .small-12
@@ -367,7 +360,7 @@
         3. Interviewing Participants
       %p.step-description
         :plain
-          Getting on the phone and talking to people is the most fun part of this process! We used a good speakerphone, a voice recorder, and some sticky notes. The sticky notes are used for two things: <strong>(1)</strong> as a loose guide in kicking-off the the conversation <strong>(2)</strong> to capture interesting insights to dig into later in the conversation. There was a delicate balance between having a somewhat guided conversation and not leading the interviewee.
+          Getting on the phone and talking to people is the most fun part of this process! We used a good speakerphone, a voice recorder, and some sticky notes. The sticky notes are used for two things: <strong>(1)</strong> as a loose guide in kicking-off the the conversation <strong>(2)</strong> to capture interesting insights to dig into later in the conversation. There was a delicate balance between having a somewhat guided conversation and not leading the interviewee too much.
 
   .row.project-step-details
     .small-12.medium-6.columns.image-column
