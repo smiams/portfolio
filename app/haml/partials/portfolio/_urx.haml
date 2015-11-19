@@ -120,22 +120,41 @@
       .callout-box.right-border
         .top
         .middle
-          .marker-container.center
-            .small.marker
+          .marker-container.top
+            .marker
           .content-container
             %h5
               Performing Tests
             %ol
               %li
                 %h6
-                  Objective
-                %p
-                  The <strong class="red-highlight">widget outlined in red</strong> is URX's inter-app linking technology. We wanted to test how the user perceived the widget, what they thought it was, and what their natural behaviors were when they encountered it.
+                  Test Prompts and User Objectives
+                %ul
+                  %li
+                    Please describe what you see on this page?
+                  %li
+                    What do you think you can do from here?
+                  %li
+                    Now that you've seen the lyrics, what would you do next?
+                  %li
+                    :plain
+                      <strong>[after identifying the URX widget]</strong> Can you tell me what this is?
+                  %li
+                    :plain
+                      <strong>[after identifying the URX widget]</strong> What do you think you can do from here?
+                  %li
+                    :plain
+                      <strong>[after clicking the URX widget]</strong> Is this what you expected to happen?
+                  %li
+                    :plain
+                      <strong>[after clicking the URX widget]</strong> What would you do next?
+
+
               %li
                 %h6
                   Facilitating The Test
                 %p
-                  I may not look super-thrilled to be facilitating this test, but I actually thought this was the most fun part of the process :) My partner Laura video recorded the user's interaction while I gave the user prompts and objectives to accomplish.
+                  I may not look super-thrilled to be facilitating this test, but I actually thought this was the <strong>most fun part of the process :)</strong> My partner Laura video recorded the user's interaction while I gave the user prompts and objectives to accomplish.
         .bottom
 
   .row.project-step
@@ -152,7 +171,7 @@
           Test Results:
         %ul
           %li
-            7 of 12 users noted that they weren't sure what song they were about to listen to because the song titles were cut off.
+            7 of 12 users weren't sure what song they were about to listen to because the song titles were cut off.
           %li
             2 of 12 users didn't recognize what the featured applications were.
           %li
@@ -214,7 +233,7 @@
   .row.project-step
     .small-12
       %h4
-        4. Additional Usability Testing
+        4. Additional Usability Testing & Recommendations
       %p.step-description
         We performed additional guerrilla usability tests using the Pixate prototype. 100% of our tested users recognized the featured application which was a dramatic improvement over version 1. Surprisingly, version 2 introduced a regression. More users expected to hear a preview of the song upon clicking it in the list.
 
@@ -230,3 +249,11 @@
             12 of 12 users recognized the featured applications.
           %li
             3 of 12 users expected a sample or song preview to be played within the browser (regression).
+
+        %h5
+          Recommendations:
+        %ul
+          %li
+            Set expectations for the user by making the calls to action more clear and explicit.
+          %li
+            Provide more context by showing the entire artist and song title.
