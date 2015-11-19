@@ -111,6 +111,25 @@ img.noble-brewer {
 .row.project-step-details {
   margin-bottom: 30px;
 
+  .project-step-summary {
+    background-color: $light-blue;
+    border-left: 2px solid $blue;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 10px 0 5px 15px;
+
+    h5 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    ul li {
+      font-weight: 300;
+    }
+  }
+
   .image-column {
     margin-bottom: 20px;
   }
@@ -199,6 +218,8 @@ img.noble-brewer {
     }
   }
 }
+
+
 
 .red-highlight {
   color: #E10101;
