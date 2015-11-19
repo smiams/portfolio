@@ -1,1 +1,333 @@
-%h1 Hello Citrine
+.project-body
+  .row.company-logo
+    .small-12.columns
+      %center
+        %img.citrine{src: "../images/citrine-logo-combined.png", width: "194", height: "103"}
+
+  .row.company-summary
+    .small-12.columns
+      %center
+        %p
+          Citrine Informatics provides an analytics platform for advanced materials research & development. The platform uses big data to unlock new insights from large volumes of historical research data.
+
+  .row.project-intro
+    .small-12.medium-8.columns
+      %h3
+        Project: Usability Testing, Design, and Implementation
+      %p
+        Citrine wanted more people to upload data and documents to their open materials data search platform. Our team set out to find out what was keeping people from uploading information, and then designed and implemented improvements to the system.
+
+    .small-12.medium-4.columns
+      %h3
+        My Role
+      %p
+        :plain
+          I conducted remote usability testing, analyzed the data, and designed system improvements with a fellow designer. In a follow-on project, I implemented front-end improvements to key parts of the system using <strong>Angular</strong> and <strong>HTML + CSS</strong> transactional e-mail.
+
+  .row.process-summary
+    .small-12.columns
+      .callout-box
+        .top
+          .marker-container.left
+            .marker
+        .middle
+          .content-container
+            .row
+              .small-12.medium-8.columns
+                %h4
+                  The Process
+                %ol
+                  %li
+                    %h5
+                      Usability Testing
+                    %p
+                      Our team conducted 5 usability tests to identify usage patterns, common frustrations, and points of confusion in the document & data upload process. This step was crucial in uncovering the real issues, and it helped us to establish priority for the problems at hand.
+                  %li
+                    %h5
+                      Analysis
+                    %p
+                      Once the usability tests were complete, we replayed the recordings and made notes. These notes were used to create an affinity map to identify usage patterns and major pain points. By re-playing the videos, we were also able to map the users' workflow through the process. This lead to some major opportunities for improving onboarding efficiency.
+                  %li
+                    %h5
+                      Design
+                    %p
+                      Freshly supplied with research insight and thoughtful analysis, we set out to design improvements to forms and screens in the onboarding flow. We used pair design sessions to collaboratively design wireframes and screen mockups.
+                  %li
+                    %h5
+                      Implementation
+                    %p
+                      The engineering team implemented some of the process improvement recommendations detailed above. Additionally, in a follow-on project, I designed and implemented improvements to the document search results interface and the upload confirmation e-mail.
+
+              .small-12.medium-4.columns
+                %h4
+                  Tools & Techniques
+                %ul.right-list
+                  %li
+                    Usability Testing & Remote Usability Testing
+                  %li
+                    Task Flows
+                  %li
+                    Wireframes
+                  %li
+                    Affinity Mapping
+                  %li
+                    Sketch 3
+                  %li
+                    HTML + CSS
+                  %li
+                    Angular
+                  %li
+                    Zurb Ink
+                  %li
+                    Customer.io & Litmus
+                  %li
+                    HTML Transactional E-mail
+
+        .bottom
+
+  .row.project-details-header
+    .small-12
+      %h3
+        Project Details
+  .row.project-step
+    .small-12
+      %h4
+        1. Usability Testing
+      %p.step-description
+        We conducted 5 usability tests to identify usage patterns, common frustrations, and points of confusion in the document & data upload process. This step was crucial in gaining a real understanding for how people felt while uploading, how they overcame problems, and at what point they failed or succeeded in their task. It helped uncover the real issues and helped us to establish priority for the problems at hand.
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/remote-usability.png", width: "461", height: "228"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.center
+            .small.marker
+          .content-container
+            %h5
+              Remote Usability Testing
+            %p
+              We tested participants remotely and in person. In both cases, we used Quicktime to record the session for replay in the analysis phase. It was amazing how prominent and overlapping usability issues and frustrations emerged after only a few tests.
+        .bottom
+
+
+  .row.project-step
+    .small-12
+      %h4
+        2. Performing Analysis
+      %p.step-description
+        Once the usability tests were complete, we replayed the recordings and made notes. These notes were used to create an affinity map to identify usage patterns and major pain points. By re-playing the videos, we were also able to map the users' workflow through the process. This lead to some major opportunities for improving onboarding efficiency.
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-affinity-2.png", width: "458", height: "290"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Key Pain Points
+            %ol
+              %li
+                %h6
+                  Onboarding
+                %ul
+                  %li
+                    %p
+                      Users were confused about whether to sign or sign up on the initial screen.
+                  %li
+                    %p
+                      Users had major difficulty signing up due to the "e-mail confirmation" step.
+              %li
+                %h6
+                  Error vs. Success Messaging
+                %ul
+                  %li
+                    %p
+                      Success messages and error messages had the same design treatment, and it was hard to differentiate the two.
+                  %li
+                    %p
+                      Error messages did not provide an easy path to a remedy.
+              %li
+                %h6
+                  File Upload
+                %ul
+                  %li
+                    %p
+                      It was unclear when files were done uploading.
+                  %li
+                    %p
+                      File upload is not a prominent action.
+        .bottom
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-flows.png", width: "390", height: "545"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Onboarding Inefficiencies
+            %p
+              :plain
+                Account confirmation errors were ignored because error messages were not differentiated from success messages. As a result, many users attempted to sign in again without first confirming their e-mail addresses. This caused them to get <strong class="red-highlight">stuck in the red loop</strong> highlighted in the task flow to the left.
+        .bottom
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-flows-recommended.png", width: "396", height: "544"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Recommended Onboarding Improvement
+            %p
+              We recommended eliminating the need for users to confirm their accounts before continuing to upload data and documents. Engineering found this to be a workable and feasible approach. The system could store documents from unconfirmed accounts in a holding area until they're confirmed.
+        .bottom
+
+  .row.project-step
+    .small-12
+      %h4
+        3. Designing Improvements
+      %p.step-description
+        :plain
+          Freshly supplied with research insight and thoughtful analysis, we set out to design improvements to forms and screens in the onboarding flow. 
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-original-sign-in.png", width: "286", height: "214"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Original Sign In Form
+            %p
+              We made the objective of the "sign up" page more obvious. We also visually separated the Google sign-up flow to alleviate a bit of the clutter.
+        .bottom
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-updated-sign-in.png", width: "350", height: "350"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Updated Sign In Form
+            %p
+              We made the objective of the "sign up" page more obvious. We also visually separated the Google sign-up flow to alleviate a bit of the clutter.
+        .bottom
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-sign-up.png", width: "350", height: "350"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Updated "Create Account" Form
+            %p
+              We made the objective of the "sign up" page more obvious. We also visually separated the Google sign-up flow to alleviate a bit of the clutter.
+        .bottom
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-almost-done.png", width: "350", height: "350"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Dedicated Screen For The "Confirm Your E-Mail Address" Message
+            %p
+              As a stop-gap between now and adding the ability for unconfirmed accounts to upload documents, we recommended that the "Please confirm your e-mail address." message belong on its own page. It is a crucial step that was skipped by almost all of our usability test subjects, and missing this step significantly de-railed the sign-up process. A dedicated page ensures that this e-mail confirmation step is not missed, and it reduces frustration leading to more sign-ups and data contributions.
+        .bottom
+
+  .row.project-step
+    .small-12
+      %h4
+        4. Implementation
+      %p.step-description
+        :plain
+          The engineering team implemented some of the process improvement recommendations detailed above. Additionally, in a follow-on project, I designed and implemented improvements to the document search results interface and the "Document Processed" confirmation e-mail. The document search interface design improvements were implemented in <strong>Angular</strong>, <strong>Bootstrap HTML + CSS</strong>. The "Document Processed" confirmation e-mail was implemented with <strong>Zurb Ink</strong>.
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-doc-search-results-numbered.png", width: "512", height: "525"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Key Improvements to the Document Search Interface
+            %ol
+              %li
+                %h6
+                  "Upload" call to action
+                %p
+                  The "Upload Documents & Data" was originally a large button in the search results section. I moved it above the search bar to make the information hierarchy more clear and clean.
+              %li
+                %h6
+                  A description of the search tool
+                %p
+                  Users weren't entirely sure about what this search tool could be used for. So I added descriptive text above the search bar to better inform the user about what this tool can do.
+              %li
+                %h6
+                  Results formatted as a List
+                %p
+                  It was difficult for users to determine the value of any search result based solely on the title, so we provided the results in a bigger format with more readable descriptive test.
+              %li
+                %h6
+                  Full-text search highlights
+                %p
+                  Upon looking at the JSON data available on the front-end, I found that this data was available but wasn't being used by the interface. This section provides the user with a clearer signal as to why this result was returned, and it gives more context about the nature of the result.
+        .bottom
+
+  .row.project-step-details
+    .small-12.medium-6.columns.image-column
+      %img{src: "../images/citrine-doc-processed-email.png", width: "512", height: "360"}
+    .small-12.medium-6.columns
+      .callout-box.right-border
+        .top
+        .middle
+          .marker-container.top
+            .marker
+          .content-container
+            %h5
+              Document Processed E-Mail Confirmation
+            %p
+              This e-mail is generated once the back-end system processes, indexes, and catalogs a user's data or document submission. Before, users were not receiving any confirmation or thank-you for the value they were providing. Now, users receive a response from the system giving them a detailed account of exactly how their submission has made the overall system more valuable for the community.
+            %p
+              :plain
+                This transactional HTML e-mail was built using <strong>HTML</strong> and inlined <strong>CSS</strong> on the <strong>Zurb Ink</strong> framework. I used <strong>Customer.io</strong>, <strong>Litmus</strong>, and <strong>E-Mail on Acid</strong> to do delivery and testing during the development phase.
+        .bottom
