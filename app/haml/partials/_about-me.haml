@@ -1,2 +1,35 @@
-%h3
-  About Me
+.row
+  .small-12.columns
+    %h3
+      Howdy, I'm Sean!
+    %p
+      :plain
+        I'm a UX design & software development professional in San Francisco with over 10 years of experience building large-scale enterprise and public-facing web software. I believe that solid user research and an agile design & development process can help teams build the right product for the right people with the right features. Building great software requires open ears, an open mind, persistence, and lots of teamwork.
+
+    %p
+      :plain
+        I moved from Chicago to San Francisco in January 2012 to help build the <a class="link" href="http://groupon.com/goods" target="_blank">Groupon Goods</a> engineering team in Palo Alto, CA. As a lead developer, I designed, built, delivered, and coordinated the release of critical and cost-saving features. I also helped build the engineering team from 2 to 10 people. In a matter of months, we transformed Groupon Goods from an e-commerce experiment to a major division which accounts for a significant portion of the company’s book of business.
+
+    %p
+      I also love aviation and adventure sports! I've enjoyed exploring Northern California from the skies in a Cessna 172, and my ideal vacation is surfing the pristine beaches of Costa Rica.
+
+.row
+  .small-12.columns
+    .contact-form
+      %h3{style: "font-weight: normal;"}
+        Get in touch!
+
+      %form{action: "//formspree.io/sean.iams@gmail.com", method: "POST"}
+        .row
+          .small-12.columns
+            %label{name: "_replyto"}
+              Your E-Mail Address:
+              %input{type: "email", class: "text email", name: "_replyto"}
+        .row
+          .small-12.columns
+            %label
+              Message:
+              %textarea{class: "input-group-field", name: "message", rows: "4"}
+        .row
+          .small-12.columns
+            %input{type: "submit", value: "Send", class: "button"}

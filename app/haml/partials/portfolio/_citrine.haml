@@ -265,7 +265,7 @@
             .marker
           .content-container
             %h5
-              Dedicated Screen For The "Confirm Your E-Mail Address" Message
+              A Dedicated Screen For The "Confirm Your E-Mail Address" Message
             %p
               As a stop-gap between now and adding the ability for unconfirmed accounts to upload documents, we recommended that the "Please confirm your e-mail address." message belong on its own page. It is a crucial step that was skipped by almost all of our usability test subjects, and missing this step significantly de-railed the sign-up process. A dedicated page ensures that this e-mail confirmation step is not missed, and it reduces frustration leading to more sign-ups and data contributions.
         .bottom
@@ -290,6 +290,9 @@
           .content-container
             %h5
               Key Improvements to the Document Search Interface
+            %p
+              :plain
+                I prototyped the designs for this page using <strong>Sketch 3</strong>. Then I implemented the designs in an <strong>Angular & Bootstrap</strong> front-end environment.
             %ol
               %li
                 %h6
@@ -326,8 +329,8 @@
             %h5
               Document Processed E-Mail Confirmation
             %p
-              This e-mail is generated once the back-end system processes, indexes, and catalogs a user's data or document submission. Before, users were not receiving any confirmation or thank-you for the value they were providing. Now, users receive a response from the system giving them a detailed account of exactly how their submission has made the overall system more valuable for the community.
-            %p
               :plain
-                This transactional HTML e-mail was built using <strong>HTML</strong> and inlined <strong>CSS</strong> on the <strong>Zurb Ink</strong> framework. I used <strong>Customer.io</strong>, <strong>Litmus</strong>, and <strong>E-Mail on Acid</strong> to do delivery and testing during the development phase.
+                This transactional HTML e-mail was built using <strong>HTML</strong> and inlined <strong>CSS</strong> on the <strong>Zurb Ink</strong> framework. I used <strong>Customer.io</strong>, <strong>Litmus</strong>, and <strong>E-Mail on Acid</strong> to do e-mail delivery and testing during the development phase.
+            %p
+              This e-mail is generated once the back-end system processes, indexes, and catalogs a user's data or document submission. Before, users were not receiving any confirmation or thank-you for the value they were providing. Users now receive an e-mail report which summarizes the details of their contribution. This gives them a good idea about how their submission has improved the system as a whole.
         .bottom

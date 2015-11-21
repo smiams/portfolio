@@ -27,6 +27,59 @@
   }
 }
 
+.columns.feature-box {
+  background-color: #EBF4FF;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+  padding: 10px 15px 10px 15px;
+
+  @media #{$medium-only} {
+    h4 { font-size: 20px; }
+    p { font-size: 14px; }
+  }
+
+  h4 {
+    font-family: $sans-serif;
+  }
+
+  p {
+    font-family: $sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  .profile-photo {
+    text-align: center;
+    vertical-align: middle;
+
+    img {
+      display: inline;
+      width: 170px;
+      height: 170px;
+    }
+  }
+
+  p.linkedin {
+    font-weight: 300;
+    margin-bottom: 0;
+    text-align: center;
+
+    @media #{$small-only} {
+      padding-top: 10px;
+    }
+
+    a {
+      font-weight: 300;
+
+      img {
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+}
+
 .row.how {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -41,6 +94,48 @@
 
   p {
     font-family: $serif;
+  }
+}
+
+.contact-form {
+  h3 {
+    font-weight: 800;
+  }
+
+  form {
+    background-color: #EBF4FF;
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    padding: 10px 15px 10px 15px;
+
+    font-family: $sans-serif;
+    font-size: 16px;
+
+    label {
+      color: $black;
+      font-family: $sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    input, textarea {
+      border-radius: 3px;
+      border: 1px solid $blue;
+      font-size: 16px;
+    }
+
+    input.button {
+      background-color: $blue;
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 5px;
+      padding: 10px 15px;
+    }
+
+    input:focus, textarea:focus {
+      border: 2px solid $blue;
+    }
   }
 }
 

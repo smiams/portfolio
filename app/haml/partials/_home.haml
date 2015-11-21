@@ -13,9 +13,15 @@
         %h4
           Professionally Speaking
         %p
-          I create software solutions to help people become more powerful and capable in their daily work. I value clarity over cleverness, and I lean on design conventions and standards where they’re appropriate. Software is a tool used to get work done. And people with better tools have a greater capacity to do what they do best.
+          I create software solutions to help people become more powerful and capable in their daily work. I value clarity over cleverness, and I lean on design conventions and standards where they’re appropriate. Software is a tool used to get work done, and people with better tools have a greater capacity to do what they do best.
       .small-12.medium-4.columns.profile-photo{"data-equalizer-watch" => "hello"}
         %img{src: "../images/profile-photo.png"}
+    .row
+      .small-12.columns
+        %p.linkedin
+          %a{href: "https://www.linkedin.com/pub/sean-iams/10/2b0/421", target: "_blank"}
+            %img{src: "https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png", width: "20", height: "15", alt: "Sean Iams' LinkedIn Profile"}
+            See my LinkedIn profile.
 
 .row.how
   .small-12.columns.section
@@ -26,37 +32,26 @@
         Let's design, build, and complete your web software project together! I work an agile process iterating the steps of <strong>research</strong>, <strong>design & prototyping</strong>, and <strong>development</strong> involving end-users and co-workers every step of the way.
 
 .row.capabilities
-  .small-12.medium-4.columns.section.active
+  .small-12.medium-4.columns.section
     %h4
       Research & Usability
     %p
       :plain
-        Software is built for people. So it is hugely important to understand who will be using the software, why they’ll use it, and how they’re currently getting the job done. Check out some of my recent work involving research at <strong>Noble Brewer</strong> and <strong>Citrine</strong>.
-    %ul.project-list
-      %li
-        %a
-          Persona Validation @
-          %strong
-            Noble Brewer
-      %li
-        %a
-          Usability Testing & Prototyping @
-          %strong
-            URX
+        Software is built for people. So it is hugely important to understand who will be using the software, why they’ll use it, and how they’re currently getting the job done. Check out some of my recent work involving research at <a href="#/portfolio/noble-brewer" class="link">Noble Brewer</a> and <a href="#/portfolio/citrine" class="link">Citrine</a>.
 
   .small-12.medium-4.columns.section
     %h4
       Design & Prototyping
     %p
       :plain
-        Design is the process of creating a solution using research insight. Once a design is solidified, tools such as invision, pixate, or marvel can be used to create a prototype to be tested with users. Recent projects at <strong>Citrine</strong> and <strong>URX</strong> involved research-driven design & prototyping.
+        Design is the process of creating a solution using research insight. Once a design is solidified, tools such as invision, pixate, or marvel can be used to create a prototype to be tested with users. Recent projects at <a href="#/portfolio/citrine" class="link">Citrine</a> and <a href="#/portfolio/urx" class="link">URX</a> involved research-driven design & prototyping.
 
   .small-12.medium-4.columns.section
     %h4
       Development
     :plain
       <p>
-        The only way to bring design into reality is by coding it up. In addition to being a full-stack <strong>Ruby on Rails</strong> developer, I have built applications in <strong>Backbone</strong> and <strong>Angular</strong>, and this portfolio runs on <strong>Angular</strong>, <strong>Zurb Foundation</strong>, <strong>HAML</strong>, and <strong>SASS</strong>.
+        The only way to bring design into reality is by coding it up. In addition to being a full-stack <strong>Ruby on Rails</strong> developer, I have built front-end applications in <strong>Backbone</strong> and <strong>CoffeeScript</strong>. This portfolio runs on <strong>Angular</strong>, <strong>JavaScript</strong>, <strong>Zurb Foundation</strong>, <strong>HAML</strong>, and <strong>SASS</strong>.
       </p>
 
 .row.practice-details
@@ -181,6 +176,25 @@
 
       .bottom
 
-%br
-%br
+.row
+  .small-12.columns
+    .contact-form
+      %h3
+        %center
+          I'd love to hear from ya!
+
+      %form{action: "//formspree.io/sean.iams@gmail.com", method: "POST"}
+        .row
+          .small-12.columns
+            %label{name: "_replyto"}
+              Your E-Mail Address:
+              %input{type: "email", class: "text email", name: "_replyto"}
+        .row
+          .small-12.columns
+            %label
+              Message:
+              %textarea{class: "input-group-field", name: "message", rows: "4"}
+        .row
+          .small-12.columns
+            %input{type: "submit", value: "Send", class: "button"}
 %br
