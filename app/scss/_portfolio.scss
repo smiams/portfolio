@@ -1,7 +1,11 @@
 @import 'variables';
 
 .project-body {
-  margin-top: 20px;
+  margin-top: 90px;
+
+  @media #{$small-only} {
+    margin-top: 110px;
+  }
 
   h3 {
     line-height: 1.4em;

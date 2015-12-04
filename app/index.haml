@@ -25,35 +25,30 @@
               %li{"ng-class" => "activeRoute(0, '')"}
                 %a{"ng-href" => "#!"}
                   HOME
+                .marker-container
               %li.portfolio{"ng-class" => "activeRoute(0, 'portfolio')"}
                 %a{"ng-href" => "#portfolio/noble-brewer"}
                   UX PORTFOLIO
-                .marker{"ng-show" => "activeRoute(0, 'portfolio')"}
+                .marker-container
               %li{"ng-class" => "activeRoute(0, 'about-me')"}
                 %a{"ng-href" => "#about-me"}
                   ABOUT ME
+                .marker-container
 
-        .row.middle
+        .row.middle{"ng-class" => "activeRoute(0, 'portfolio')"}
           .small-12.columns
-            %hr.divider
-        
-        .row.bottom{"ng-show" => "activeRoute(0, 'portfolio')"}
-          .small-0.medium-6.large-6.columns
-          .small-12.medium-6.large-6.columns.sub-nav-container
-            .portfolio-sub-nav
-              %ul
-                %li
-                  %a{"ng-href" => "#portfolio/noble-brewer", "ng-class" => "activeRoute(1, 'noble-brewer')"}
-                    Noble Brewer
-                %li
-                  %a{"ng-href" => "#portfolio/citrine", "ng-class" => "activeRoute(1, 'citrine')"}
-                    Citrine
-                %li
-                  %a{"ng-href" => "#portfolio/urx", "ng-class" => "activeRoute(1, 'urx')"}
-                    URX
-        .row.footer{"ng-show" => "activeRoute(0, 'portfolio')"}
-          .small-12.columns
-            %hr
+            .divider
+              .portfolio-sub-nav
+                %ul
+                  %li
+                    %a{"ng-href" => "#portfolio/noble-brewer", "ng-class" => "activeRoute(1, 'noble-brewer')"}
+                      Noble Brewer
+                  %li
+                    %a{"ng-href" => "#portfolio/citrine", "ng-class" => "activeRoute(1, 'citrine')"}
+                      Citrine
+                  %li
+                    %a{"ng-href" => "#portfolio/urx", "ng-class" => "activeRoute(1, 'urx')"}
+                      URX
 
     .main-content
       :plain
