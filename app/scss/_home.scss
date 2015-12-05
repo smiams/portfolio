@@ -149,6 +149,16 @@
   p {
     font-family: $serif;
     line-height: 1.4em;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .section-image {
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   @media #{$medium-only} {
