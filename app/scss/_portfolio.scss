@@ -178,7 +178,7 @@ img.noble-brewer {
         }
       }
     }
-  } 
+  }
 }
 
 .row.sample-screener {
@@ -212,29 +212,33 @@ img.noble-brewer {
       }
     }
   }
+}
 
-  .screener-summary {
-    background-color: $light-blue;
-    border-left: 2px solid $blue;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    padding: 10px 0 5px 15px;
+.centered-callout {
+  background-color: $light-blue;
+  border-left: 2px solid $blue;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 10px 0 5px 15px;
 
-    h5 {
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      margin-bottom: 5px;
-    }
+  h5 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
 
-    ul li {
-      font-weight: 300;
-    }
+  ul li {
+    font-weight: 300;
   }
 }
 
-
-
 .red-highlight {
   color: #E10101;
+}
+
+.tier-summary {
+  @media #{$medium-up} {
+    margin-bottom: 20px;
+  }
 }

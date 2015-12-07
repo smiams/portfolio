@@ -84,7 +84,6 @@
         border-top-right-radius: 0;
 
         border-left: none;
-        padding-left: 15px;
       }
 
       .marker-container {
@@ -129,7 +128,7 @@
       background-color: $light-blue;
       border-bottom-right-radius: 3px;
       border-top-right-radius: 3px;
-      padding: 10px 10px 0 10px;
+      padding: 20px 20px 10px 20px;
 
       h4, h5, li, p {
         font-family: $sans-serif;
@@ -199,10 +198,24 @@
 
   .bottom {
     .marker-container {
+      background-color: red;
+
       .marker {
-        border-top-color: red;
+        border-top-color: $light-blue;
         position: absolute;
         right: 0px;
+      }
+
+      &.center {
+        text-align: center;
+
+        .marker {
+          right: initial;
+
+          &.small {
+            top: -5px;
+          }
+        }
       }
     }
   }
