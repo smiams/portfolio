@@ -136,6 +136,7 @@ nav {
       list-style-type: none;
       margin: 0px;
       text-align: right;
+      white-space: nowrap;
 
       @media #{$small-only} {
         background-color: #4A90E2;

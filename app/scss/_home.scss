@@ -2,7 +2,12 @@
   margin-bottom: 30px;
   margin-top: 40px;
 
-  h3, p {
+  h3{
+    font-family: $sans-serif;
+    text-align: center;
+  }
+
+  p {
     font-family: $serif;
     text-align: center;
   }
@@ -89,11 +94,11 @@
   margin-top: 30px;
 
   h3, p {
-    text-align: center;
+    text-align: left;
   }
 
   h3 {
-    font-weight: 800;
+    font-weight: 500;
   }
 
   p {
@@ -146,29 +151,51 @@
 .row.capabilities {
   margin-bottom: 30px;
 
+  p.process-step {
+    font-size: .9rem;
+  }
+
   p {
     font-family: $serif;
     line-height: 1.4em;
-    text-align: center;
+    text-align: left;
   }
 
   h4 {
+    font-size: 1.125rem;
+    font-weight: 400;
     text-align: center;
+    white-space: nowrap;
   }
 
   .section-image {
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
+
+    .caption {
+      margin-top: 5px;
+      text-align: center;
+
+      p {
+        display: inline-block;
+        max-width: 270px;
+        text-align: center;
+        font-size: .9rem;
+      }
+    }
   }
 
-  @media #{$medium-only} {
+  .columns.section p {
+    max-width: 270px;
+  }
+
+  @media #{$small-only} {
     h4 {
-      font-size: 16px;
-      font-weight: 800;
+      text-align: lefts;
     }
 
-    p {
-      font-size: 14px;
+    .columns.section p {
+      font-size: .9rem;
     }
   }
 
@@ -206,6 +233,85 @@
     }
   }
 }
+
+h3.recent-work {
+  @media #{$medium-up} {
+    margin-bottom: -20px;
+  }
+}
+
+p.recent-work {
+  display: none;
+
+  @media #{$small-only} {
+    display: block;
+  }
+}
+
+.row.projects {
+  h4 {
+    text-align: left;
+  }
+
+  a {
+    color: $black;
+  }
+
+  .section-image {
+    .button {
+      display: none;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-weight: 500;
+  }
+
+  @media #{$small-only} {
+    h4 {
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .small-0 {
+      display: none;
+    }
+
+    .button {
+      display: none;
+    }
+
+    .section-image {
+      img {
+        margin-bottom: 5px;
+      }
+      .caption {
+        text-align: center;
+        p {
+          display: none;
+        }
+        .button {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .button {
+    background-color: $blue;
+    border-radius: 3px;
+    color: $white;
+    font-family: $sans-serif;
+    font-weight: 300;
+    font-size: .75rem;
+    padding: 7px 15px 7px 15px;
+  }
+}
+
 
 .row.practice-details {
   display: none;
