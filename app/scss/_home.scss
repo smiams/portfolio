@@ -3,7 +3,7 @@
   margin-top: 40px;
 
   h3{
-    font-family: $sans-serif;
+    font-family: $serif;
     text-align: center;
   }
 
@@ -98,7 +98,7 @@
   }
 
   h3 {
-    font-weight: 500;
+    font-weight: 400;
   }
 
   p {
@@ -163,7 +163,7 @@
 
   h4 {
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     white-space: nowrap;
   }
@@ -268,12 +268,12 @@ p.recent-work {
   }
 
   h4 {
-    font-weight: 500;
+    font-weight: 400;
   }
 
   @media #{$small-only} {
     h4 {
-      font-weight: 500;
+      font-weight: 300;
       text-align: center;
     }
 
