@@ -1,0 +1,61 @@
+!!! 5
+%html
+  %head
+    %meta{charset: "utf8"}
+    %meta{name: "viewport", content:"width=device-width"}
+    %meta{name: "google-site-verification", content:"3Ccn3zKixsjitl3gKva3cQS3hpFJdXbJAHZ411OuUSg"}
+
+    %link{rel: "stylesheet", media: "screen", href: "./css/application.css"}
+    %script{src: "./js/jquery.min.js"}
+    %script{src: "./js/foundation.min.js"}
+    %script{src: "./js/foundation.equalizer.js"}
+    %script{src: "./js/angular.min.js"}
+    %script{src: "./js/angular-route.min.js"}
+    %title
+      Sean Iams - Product Designer
+
+  %body{"ng-app" => "Portfolio", "ng-controller" => "ApplicationController"}
+    .fixed
+      %nav{"data-topbar" => "", role: "navigation"}
+        .row.top
+          %a{"ng-href" => "#!"}
+            .small-12.medium-6.large-6.columns.title.nowrap
+              %h1 Sean Iams
+              %h2
+                product designer.
+          .small-12.medium-6.large-6.columns.nav
+            %ul.primary-nav
+              %li{"ng-class" => "activeRoute(0, '')"}
+                %a{"ng-href" => "#!"}
+                  HOME
+                .marker-container
+              %li.portfolio{"ng-class" => "activeRoute(0, 'portfolio')"}
+                %a{"ng-href" => "#portfolio/noble-brewer"}
+                  RECENT WORK
+                .marker-container
+              %li{"ng-class" => "activeRoute(0, 'about-me')"}
+                %a{"ng-href" => "#about-me"}
+                  ABOUT ME
+                .marker-container
+
+        .row.middle{"ng-class" => "activeRoute(0, 'portfolio')"}
+          .small-12.columns
+            .divider
+              .portfolio-sub-nav
+                %ul
+                  %li
+                    %a{"ng-href" => "#portfolio/noble-brewer", "ng-class" => "activeRoute(1, 'noble-brewer')"}
+                      Noble Brewer
+                  %li
+                    %a{"ng-href" => "#portfolio/citrine", "ng-class" => "activeRoute(1, 'citrine')"}
+                      Citrine
+                  %li
+                    %a{"ng-href" => "#portfolio/urx", "ng-class" => "activeRoute(1, 'urx')"}
+                      URX
+
+    .main-content
+      :plain
+        <ng-view autoscroll="true"></ng-view>
+
+  %script{type: "text/javascript", src: "./js/application.js"}
+  %script{type: "text/javascript", src: "./js/application-controller.js"}

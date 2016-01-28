@@ -6,7 +6,7 @@ var Portfolio = angular.module("Portfolio", ["ngRoute"])
 .config(["$routeProvider", function($routeProvider) {
   $routeProvider.
     when("/", {
-      templateUrl: "/html/partials/_home.html",
+      templateUrl: "/html/partials/_new-home.html",
       controller: "ApplicationController"
     }).
     when("/portfolio/citrine", {

@@ -5,57 +5,219 @@
     %meta{name: "viewport", content:"width=device-width"}
     %meta{name: "google-site-verification", content:"3Ccn3zKixsjitl3gKva3cQS3hpFJdXbJAHZ411OuUSg"}
 
-    %link{rel: "stylesheet", media: "screen", href: "./css/application.css"}
+    %link{rel: "stylesheet", media: "screen", href: "./css/v2/application.css"}
     %script{src: "./js/jquery.min.js"}
+    %script{src: "./js/jquery.nav.js"}
     %script{src: "./js/foundation.min.js"}
     %script{src: "./js/foundation.equalizer.js"}
-    %script{src: "./js/angular.min.js"}
-    %script{src: "./js/angular-route.min.js"}
     %title
-      Sean Iams - Software UX Designer
+      Sean Iams - Product Designer
 
-  %body{"ng-app" => "Portfolio", "ng-controller" => "ApplicationController"}
+  %body.v2
     .fixed
-      %nav{"data-topbar" => "", role: "navigation"}
-        .row.top
-          %a{"ng-href" => "#!"}
-            .small-12.medium-6.large-6.columns.title.nowrap
-              %h1 Sean Iams
-              %h2
-                product designer.
-          .small-12.medium-6.large-6.columns.nav
-            %ul.primary-nav
-              %li{"ng-class" => "activeRoute(0, '')"}
-                %a{"ng-href" => "#!"}
-                  HOME
-                .marker-container
-              %li.portfolio{"ng-class" => "activeRoute(0, 'portfolio')"}
-                %a{"ng-href" => "#portfolio/noble-brewer"}
-                  RECENT WORK
-                .marker-container
-              %li{"ng-class" => "activeRoute(0, 'about-me')"}
-                %a{"ng-href" => "#about-me"}
-                  ABOUT ME
-                .marker-container
+      %nav{id: "nav", "data-topbar" => "", role: "navigation"}
+        .row
+          .small-2.columns
+            .avatar
+              %img{src: "../images/profile-photo-right.png", width: "110", height: "110"}
+          .small-8.columns
+            %center
+              %ul
+                %li
+                  %a{href: "#my-process"}
+                    My Process
+                %li
+                  %a{href: "#recent-projects"}
+                    Recent Work
+                %li
+                  %a{href: "#about-me"}
+                    About Me
+          .small-2.columns
 
-        .row.middle{"ng-class" => "activeRoute(0, 'portfolio')"}
-          .small-12.columns
-            .divider
-              .portfolio-sub-nav
-                %ul
-                  %li
-                    %a{"ng-href" => "#portfolio/noble-brewer", "ng-class" => "activeRoute(1, 'noble-brewer')"}
-                      Noble Brewer
-                  %li
-                    %a{"ng-href" => "#portfolio/citrine", "ng-class" => "activeRoute(1, 'citrine')"}
-                      Citrine
-                  %li
-                    %a{"ng-href" => "#portfolio/urx", "ng-class" => "activeRoute(1, 'urx')"}
-                      URX
+    .home
+      .row.intro
+        .small-12.columns
+          %h1
+            Hello! I'm Sean.
+          %p
+            I'm a product designer based in San Francisco focused on creating software that empowers people do the best work of their lives.
+      .row.divider.my-process
+        %a.nav-anchor{id: "my-process"}
+        .icon
+          %img{src: "../images/my-process.png", width: "150", height: "150"}
+        %h2
+          My Process
+        %p
+          I work an agile process iterating the steps of research, design & prototyping, and development involving end-users and co-workers every step of the way.
+      .row.section.process
+        .small-12.medium-4.columns
+          .process-step
+            .icon-container
+              .icon
+                %img{src: "../images/convo-bubbles.png", width: "38", height: "31"}
+            %h3
+              Research & Test
+            %ul
+              %li
+                user interviews
+              %li
+                user-testing prototypes
+              %li
+                site & app analytics
+        .small-12.medium-4.columns
+          .process-step
+            .icon-container
+              .icon
+                %img{src: "../images/diamond.png", width: "41", height: "40"}
+            %h3
+              Design & Prototype
+            %ul
+              %li
+                interactive prototypes
+              %li
+                wireframes
+              %li
+                collaborative design sprints
+        .small-12.medium-4.columns
+          .process-step
+            .icon-container
+              .icon
+                %img{src: "../images/browser-code.png", width: "35", height: "31"}
+            %h3
+              Build & Deploy
+            %ul
+              %li
+                html + css
+              %li
+                javascript
+              %li
+                angular, backbone, react
+      .row.divider.recent-projects
+        %a.nav-anchor{id: "recent-projects"}
+        .icon
+          %img{src: "../images/briefcase.png", width: "150", height: "150"}
+        %h2
+          Recent Work
+        %p
+          I’ve enjoyed designing and deploying world class software with clients & companies of all shapes and sizes. Recent projects run the gambit from research, to design & prototyping, to front-end implementation.
+      .row.section
+        .small-12.columns
+          .row.project
+            .small-12.columns
+              .row.logo
+                .small-12.columns
+                  .logo-container
+                    %img{src: "../images/nb-logo-348.png", width: "348", height: "100"}
+              .row.description
+                .small-12.medium-8.columns.project-blurb
+                  %h3
+                    User Research & Persona Development
+                  %p
+                    Our team built fully-researched and validated personas for Noble Brewer. We performed extensive interviewing and behavioral research and synthesized it into detailed personas. Noble Brewer was able to use this insight to orient their marketing and product development efforts to the needs and goals of real people.
+                .small-12.medium-4.columns
+                  %ul.project-icons
+                    %li
+                      .icon
+                        %img{src: "../images/convo-bubbles.png", width: "38", height: "31"}
+                      .caption
+                        user interviews
+                    %li
+                      .icon
+                        %img{src: "../images/bullet-points.png", width: "32", height: "32"}
+                      .caption
+                        surveys & screeners
+                    %li
+                      .icon
+                        %img{src: "../images/personas.png", width: "25", height: "31"}
+                      .caption
+                        persona development
+          .row.project
+            .small-12.columns
+              .row.logo
+                .small-12.columns
+                  .logo-container
+                    %img{src: "../images/urx-logo.svg", width: "265", height: "100"}
+              .row.description
+                .small-12.medium-8.columns.project-blurb
+                  %h3
+                    Interaction Design & Prototyping
+                  %p
+                    URX provides app makers with embeddable buttons and widgets which link one app to another. They wanted to get an idea of behavioral triggers that encouraged click-throughs, and they wanted to know what may have been preventing users from engaging with their app-to-app links.
+                .small-12.medium-4.columns
+                  %ul.project-icons
+                    %li
+                      .icon
+                        %img{src: "../images/cropping.png", width: "31", height: "31"}
+                      .caption
+                        wireframing & design
+                    %li
+                      .icon
+                        %img{src: "../images/mobile-device.png", width: "20", height: "32"}
+                      .caption
+                        mobile prototyping
+                    %li
+                      .icon
+                        %img{src: "../images/eye.png", width: "47", height: "31"}
+                      .caption
+                        usability testing
+          .row.project
+            .small-12.columns
+              .row.logo
+                .small-12.columns
+                  .logo-container
+                    %img{src: "../images/citrine-logo-209.png", width: "209", height: "101"}
+              .row.description
+                .small-12.medium-8.columns.project-blurb
+                  %h3
+                    Usability Testing & Design
+                  %p
+                    Citrine wanted more people to upload data and documents to their materials data search platform. Our team set out to find out what was keeping people from uploading information, and then we designed and implemented improvements to the system.
+                .small-12.medium-4.columns
+                  %ul.project-icons
+                    %li
+                      .icon
+                        %img{src: "../images/markup-brackets.png", width: "41", height: "31"}
+                      .caption
+                        front-end development
+                    %li
+                      .icon
+                        %img{src: "../images/eye.png", width: "47", height: "31"}
+                      .caption
+                        usability testing
+                    %li
+                      .icon
+                        %img{src: "../images/cropping.png", width: "31", height: "31"}
+                      .caption
+                        wireframing & design
+      .row.divider.about-me
+        %a.nav-anchor{id: "about-me"}
+        .icon
+          %img{src: "../images/about-me.png", width: "150", height: "150"}
+        .small-12.columns
+          %h2
+            About Me
+        .small-12.columns
+          %p
+            Professionally, I enjoy product design and front-end software development. For fun, I enjoy sports involving the ocean, the skies, the mountains, and the wind.
+      .row.section.about-me
+        .small-12.medium-8.columns.about-me
+          .blurb
+            %h3
+              Professionally
+            %p
+              I've recently leveled-up my career by learning product design through a series of freelance design projects. My ideal job involves a combination of product design and software development.
+          .blurb
+            %h3
+              For Fun
+            %p
+              I love aviation and adventure sports. Over the years, I've steadily added pilot ratings to my resume, and I also enjoy surfing, snowboarding, and kiteboarding. Northern California is a great place for all of these things!
+        .small-12.medium-4.columns
+          .icon
+            %img{src: "../images/book.png", width: "65", height: "57"}
+          .icon
+            %img{src: "../images/airplane.png", width: "65", height: "65"}
+          .icon
+            %img{src: "../images/surfboard.png", width: "65", height: "65"}
 
-    .main-content
-      :plain
-        <ng-view autoscroll="true"></ng-view>
-
-  %script{type: "text/javascript", src: "./js/application.js"}
-  %script{type: "text/javascript", src: "./js/application-controller.js"}
+:javascript
+  $('#nav').onePageNav();
