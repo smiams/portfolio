@@ -15,6 +15,12 @@ gulp.task('haml', ['clean'], function() {
   gulp.src('./app/index.haml')
   .pipe(haml())
   .pipe(gulp.dest('./build'));
+  gulp.src('./app/citrine.haml')
+  .pipe(haml())
+  .pipe(gulp.dest('./build'));
+  gulp.src('./app/index-original.haml')
+  .pipe(haml())
+  .pipe(gulp.dest('./build'));
 });
 
 gulp.task('sass', ['clean'], function() {

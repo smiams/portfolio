@@ -17,30 +17,133 @@
     .fixed
       %nav{id: "nav", "data-topbar" => "", role: "navigation"}
         .row
-          .small-2.columns
-            .avatar
+          .small-2.spacer.columns
+            %a.avatar{href: "/"}
               %img{src: "../images/profile-photo-right.png", width: "110", height: "110"}
           .small-8.columns
             %center
               %ul
                 %li
-                  %a{href: "#my-process"}
-                    My Process
+                  %a{href: "#recent-work"}
+                    RECENT WORK
                 %li
-                  %a{href: "#recent-projects"}
-                    Recent Work
+                  %a{href: "#my-process"}
+                    MY PROCESS
                 %li
                   %a{href: "#about-me"}
-                    About Me
-          .small-2.columns
-
+                    ABOUT ME
+          .small-2.spacer.columns
     .home
       .row.intro
         .small-12.columns
           %h1
             Hello! I'm Sean.
           %p
-            I'm a product designer based in San Francisco focused on creating software that empowers people do the best work of their lives.
+            I'm a product designer based in San Francisco creating software that empowers people do the best work of their lives.
+      .row.divider.recent-projects
+        %a.nav-anchor{id: "recent-work"}
+        .icon
+          %img{src: "../images/briefcase.png", width: "150", height: "150"}
+        %h2
+          Recent Work
+        %p
+          I’ve enjoyed creating world class software with clients & companies of all shapes and sizes. Recent projects run the gambit from research, to design & prototyping, to front-end implementation.
+      .row.section
+        .small-12.columns
+          .row.project
+
+            .small-12.columns
+              .row.logo
+                .small-12.columns
+                  .logo-container
+                    %img{src: "../images/citrine-logo-209.png", width: "209", height: "101"}
+              .row.description
+                .small-12.medium-8.columns.project-blurb
+                  %h3
+                    Usability Testing & Design
+                  %p
+                    Citrine wanted more people to upload data and documents to their materials data search platform. Our team set out to find out what was keeping people from uploading information, and then we designed and implemented improvements to the system.
+                  %p
+                    %a.button{href: "/citrine.html"}
+                      Read more.
+                .small-12.medium-4.columns.project-icons
+                  %ul.project-icons
+                    %li
+                      .icon
+                        %img{src: "../images/markup-brackets.png", width: "41", height: "31"}
+                      .caption
+                        front-end development
+                    %li
+                      .icon
+                        %img{src: "../images/eye.png", width: "47", height: "31"}
+                      .caption
+                        usability testing
+                    %li
+                      .icon
+                        %img{src: "../images/cropping.png", width: "31", height: "31"}
+                      .caption
+                        wireframing & design
+
+          .row.project
+            .small-12.columns
+              .row.logo
+                .small-12.columns
+                  .logo-container
+                    %img{src: "../images/urx-logo.svg", width: "265", height: "100"}
+              .row.description
+                .small-12.medium-8.columns.project-blurb
+                  %h3
+                    Usability Research, Interaction Design & Prototyping
+                  %p
+                    URX provides app makers with embeddable buttons and widgets which link one app to another. They wanted to get an idea of behavioral triggers that encouraged click-throughs, and they wanted to know what may have been preventing users from engaging with their app-to-app links.
+                .small-12.medium-4.columns.project-icons
+                  %ul.project-icons
+                    %li
+                      .icon
+                        %img{src: "../images/cropping.png", width: "31", height: "31"}
+                      .caption
+                        wireframing & design
+                    %li
+                      .icon
+                        %img{src: "../images/mobile-device.png", width: "20", height: "32"}
+                      .caption
+                        mobile prototyping
+                    %li
+                      .icon
+                        %img{src: "../images/eye.png", width: "47", height: "31"}
+                      .caption
+                        usability testing
+
+          .row.project.last
+            .small-12.columns
+              .row.logo
+                .small-12.columns
+                  .logo-container
+                    %img{src: "../images/nb-logo-348.png", width: "348", height: "100"}
+              .row.description
+                .small-12.medium-8.columns.project-blurb
+                  %h3
+                    User Research & Persona Development
+                  %p
+                    Our team built fully-researched and validated personas for Noble Brewer. We performed extensive interviewing and behavioral research and synthesized it into detailed personas. Noble Brewer was able to use this insight to orient their marketing and product development efforts to the needs and goals of real people.
+                .small-12.medium-4.columns.project-icons
+                  %ul.project-icons
+                    %li
+                      .icon
+                        %img{src: "../images/convo-bubbles.png", width: "38", height: "31"}
+                      .caption
+                        user interviews
+                    %li
+                      .icon
+                        %img{src: "../images/bullet-points.png", width: "32", height: "32"}
+                      .caption
+                        surveys & screeners
+                    %li
+                      .icon
+                        %img{src: "../images/personas.png", width: "25", height: "31"}
+                      .caption
+                        persona development
+
       .row.divider.my-process
         %a.nav-anchor{id: "my-process"}
         .icon
@@ -48,7 +151,7 @@
         %h2
           My Process
         %p
-          I work an agile process iterating the steps of research, design & prototyping, and development involving end-users and co-workers every step of the way.
+          I work with end-users and co-workers in an agile process iterating through research, design/prototyping, and development.
       .row.section.process
         .small-12.medium-4.columns
           .process-step
@@ -92,103 +195,6 @@
                 javascript
               %li
                 angular, backbone, react
-      .row.divider.recent-projects
-        %a.nav-anchor{id: "recent-projects"}
-        .icon
-          %img{src: "../images/briefcase.png", width: "150", height: "150"}
-        %h2
-          Recent Work
-        %p
-          I’ve enjoyed designing and deploying world class software with clients & companies of all shapes and sizes. Recent projects run the gambit from research, to design & prototyping, to front-end implementation.
-      .row.section
-        .small-12.columns
-          .row.project
-            .small-12.columns
-              .row.logo
-                .small-12.columns
-                  .logo-container
-                    %img{src: "../images/nb-logo-348.png", width: "348", height: "100"}
-              .row.description
-                .small-12.medium-8.columns.project-blurb
-                  %h3
-                    User Research & Persona Development
-                  %p
-                    Our team built fully-researched and validated personas for Noble Brewer. We performed extensive interviewing and behavioral research and synthesized it into detailed personas. Noble Brewer was able to use this insight to orient their marketing and product development efforts to the needs and goals of real people.
-                .small-12.medium-4.columns
-                  %ul.project-icons
-                    %li
-                      .icon
-                        %img{src: "../images/convo-bubbles.png", width: "38", height: "31"}
-                      .caption
-                        user interviews
-                    %li
-                      .icon
-                        %img{src: "../images/bullet-points.png", width: "32", height: "32"}
-                      .caption
-                        surveys & screeners
-                    %li
-                      .icon
-                        %img{src: "../images/personas.png", width: "25", height: "31"}
-                      .caption
-                        persona development
-          .row.project
-            .small-12.columns
-              .row.logo
-                .small-12.columns
-                  .logo-container
-                    %img{src: "../images/urx-logo.svg", width: "265", height: "100"}
-              .row.description
-                .small-12.medium-8.columns.project-blurb
-                  %h3
-                    Interaction Design & Prototyping
-                  %p
-                    URX provides app makers with embeddable buttons and widgets which link one app to another. They wanted to get an idea of behavioral triggers that encouraged click-throughs, and they wanted to know what may have been preventing users from engaging with their app-to-app links.
-                .small-12.medium-4.columns
-                  %ul.project-icons
-                    %li
-                      .icon
-                        %img{src: "../images/cropping.png", width: "31", height: "31"}
-                      .caption
-                        wireframing & design
-                    %li
-                      .icon
-                        %img{src: "../images/mobile-device.png", width: "20", height: "32"}
-                      .caption
-                        mobile prototyping
-                    %li
-                      .icon
-                        %img{src: "../images/eye.png", width: "47", height: "31"}
-                      .caption
-                        usability testing
-          .row.project
-            .small-12.columns
-              .row.logo
-                .small-12.columns
-                  .logo-container
-                    %img{src: "../images/citrine-logo-209.png", width: "209", height: "101"}
-              .row.description
-                .small-12.medium-8.columns.project-blurb
-                  %h3
-                    Usability Testing & Design
-                  %p
-                    Citrine wanted more people to upload data and documents to their materials data search platform. Our team set out to find out what was keeping people from uploading information, and then we designed and implemented improvements to the system.
-                .small-12.medium-4.columns
-                  %ul.project-icons
-                    %li
-                      .icon
-                        %img{src: "../images/markup-brackets.png", width: "41", height: "31"}
-                      .caption
-                        front-end development
-                    %li
-                      .icon
-                        %img{src: "../images/eye.png", width: "47", height: "31"}
-                      .caption
-                        usability testing
-                    %li
-                      .icon
-                        %img{src: "../images/cropping.png", width: "31", height: "31"}
-                      .caption
-                        wireframing & design
       .row.divider.about-me
         %a.nav-anchor{id: "about-me"}
         .icon
@@ -198,26 +204,56 @@
             About Me
         .small-12.columns
           %p
-            Professionally, I enjoy product design and front-end software development. For fun, I enjoy sports involving the ocean, the skies, the mountains, and the wind.
+            Professionally, I enjoy digital product design and front-end development. For fun, I enjoy sports involving the ocean, the skies, the mountains, and the wind.
       .row.section.about-me
         .small-12.medium-8.columns.about-me
           .blurb
             %h3
               Professionally
             %p
-              I've recently leveled-up my career by learning product design through a series of freelance design projects. My ideal job involves a combination of product design and software development.
+              With 10 years of experience as a software engineer at companies like Groupon, Rise, and Obtiva, I'm now enjoying the design side of things. I enjoy persistently iterating the process of research, interaction design, and prototyping to find the most practical and elegant solution. It is akin to the the art of sculpture, and it is fueled by the input and insight of many.
           .blurb
             %h3
               For Fun
             %p
-              I love aviation and adventure sports. Over the years, I've steadily added pilot ratings to my resume, and I also enjoy surfing, snowboarding, and kiteboarding. Northern California is a great place for all of these things!
-        .small-12.medium-4.columns
+              I love aviation and adventure sports. Over the years, I've steadily added pilot ratings to my logbook. Surfing, snowboarding, and kiteboarding are my jam, and paragliding is next. Northern California is a great place for all of these things!
+        .small-12.medium-4.columns.big-icons
           .icon
             %img{src: "../images/book.png", width: "65", height: "57"}
           .icon
             %img{src: "../images/airplane.png", width: "65", height: "65"}
           .icon
             %img{src: "../images/surfboard.png", width: "65", height: "65"}
+
+    .footer
+      .row
+        .small-12.medium-6.columns
+          .row
+            .contact-form
+              .row
+                .small-12.columns
+                  %h3
+                    Send me a lovely message.
+
+              %form{action: "//formspree.io/smiamsdemo@gmail.com", method: "POST"}
+                .row
+                  .small-12.columns
+                    %label{name: "_replyto"}
+                      Your e-mail address:
+                      %input{type: "email", class: "text email", name: "_replyto"}
+                .row
+                  .small-12.columns
+                    %label
+                      Your flowery prose:
+                      %textarea{class: "input-group-field", name: "message", rows: "4"}
+                .row
+                  .small-12.columns
+                    %input{type: "submit", value: "Send", class: "button"}
+        .small-12.medium-6.columns
+          %ul.footer-links
+            %li
+              %a{href: "https://www.linkedin.com/in/seaniams", target: "_blank"}
+                My LinkedIn profile is here.
 
 :javascript
   $('#nav').onePageNav();

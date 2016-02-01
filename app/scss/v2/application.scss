@@ -3,3 +3,223 @@
 
 @import 'variables';
 @import 'home';
+@import 'project';
+
+// Overriding some Zurb styles...
+.row .row {
+  margin: 0;
+}
+
+@media #{$medium-up} {
+  .project-page .column, .project-page .columns {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+  }
+}
+
+nav {
+  padding: 2rem 0 2rem 0;
+  background-color: $black;
+
+  &.sub-nav-open {
+    padding-bottom: 3rem;
+
+    @media #{$small-down} {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .avatar {
+    display: block;
+    position: relative;
+
+    img {
+      top: -1rem;
+      position: absolute;
+    }
+  }
+
+  .spacer.columns {
+    min-height: 1px;
+  }
+
+  .small-8.columns {
+//    background-color: green;
+  }
+
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    right: 0;
+    width: 100%;
+
+    li {
+      font-size: 18px;
+      font-weight: 100;
+      display: inline-block;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      position: relative;
+
+      .inner-nav {
+        position: relative;
+
+        ul {
+          left: -1em;
+          width: 40em;
+          position: absolute;
+          display: inline-block;
+          bottom: -1.7em;
+          text-align: left;
+
+          li {
+            display: inline-block;
+            font-weight: 100;
+            font-size: 14px;
+            margin-right: 0;
+            padding: 0 1em 0 1em;
+          }
+
+          li a, li a:hover, li a:focus, li a:visited {
+            color: $text-nav-inactive !important;
+          }
+
+          li.active {
+            a, a:hover {
+              color: #FFFFFF !important;
+            }
+          }
+
+          li:first-child {
+            padding: 0;
+            width: 1em;
+
+            img {
+              position: relative;
+              top: -.2em;
+            }
+          }
+        }
+      }
+    }
+
+    li a:hover, li a:focus, li a:visited {
+      color: $text-nav-inactive;
+    };
+
+    li a {
+      color: $text-nav-inactive;
+    }
+
+    li.current.has-sub-nav {
+      @media #{$small-down} {
+        margin-bottom: 2em;
+      }
+    }
+
+    li.current a, li.current a:visited, li.current a:hover {
+      color: #FFFFFF !important;
+    }
+  }
+
+  ul:after {
+    clear: both;
+  };
+
+  .row.project-nav {
+    display: none;
+    text-align: center;
+
+    ul {
+      display: inline-block;
+      bottom: -3.2em;
+      position: absolute;
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      margin: 0;
+
+      text-align: center;
+      border: 1px solid $black;
+
+      li {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 14px;
+        margin-right: 0;
+        padding: .5em 0 .5em 0;
+        width: 8.5em;
+
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+.sub-nav-container {
+  position: relative;
+}
+
+.footer {
+  padding-left: 2rem;
+
+  .contact-form {
+    h3 {
+      font-size: 24px;
+      font-weight: 100;
+      color: #FFFFFF;
+    }
+
+    label {
+      font-weight: 100;
+      color: #FFFFFF;
+    }
+
+    input {
+      font-weight: 300;
+    }
+  }
+
+  .contact-form {
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin: 1em 0 1em 0;
+    border-right: 1px solid #585858;
+
+    @media #{$small-down} {
+      border-right: none;
+      border-bottom: 1px solid #585858;
+    }
+
+    input.button {
+      padding: 1em 2em 1em 2em;
+      border-radius: 3px;
+      background-color: $green;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
+    }
+  }
+
+  ul.footer-links {
+    margin-left: 0;
+    font-weight: 100;
+    padding-top: 1em;
+    list-style-type: circle;
+    color: $text-nav-inactive;
+    list-style-position: inside;
+
+    li {
+      a, a:visited, a:focus {
+        color: $text-nav-inactive;
+      }
+      
+      a:hover {
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+      }
+    }
+  }
+  background-color: $black;
+}

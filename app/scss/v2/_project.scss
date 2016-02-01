@@ -1,0 +1,113 @@
+.project-page {
+  padding-top: 12rem;
+
+  .company-intro {
+    margin-bottom: 5.5rem;
+
+    h1, p {
+      font-weight: 300;
+      margin-bottom: .2rem;
+      text-align: right;
+    }
+
+    p.tags {
+      color: #757575;
+      font-size: 12px;
+    }
+  }
+
+  .project-intro {
+    margin-bottom: 2rem;
+
+    .row {
+      margin-bottom: 2.3rem;
+    }
+  }
+
+  .project-step {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+
+    &.with-divider {
+      border-bottom: 1px solid #D7D7D7;
+    }
+
+    .row {
+      margin-bottom: 5rem;
+    }
+
+    .row.short {
+      margin-bottom: 2rem;
+    }
+
+    h3.big-centered {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    h3.small-centered {
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  .blurb {
+    h3, p, li {
+      font-weight: 300;
+    }
+
+    li {
+      padding-bottom: .5rem;
+    }
+
+    ul {
+      list-style-type: circle;
+      color: $green;
+      
+      li span {
+        color: $black;
+      }
+    }
+
+    img.main {
+      margin-top: 1rem;
+    }
+
+    h3 {
+      margin-bottom: .25rem;
+
+      img.icon {
+        position: relative;
+        top: -.125em;
+        margin-right: .25rem;
+      }
+    }
+  }
+
+  .image-blurb {
+    img {
+      border-radius: 3px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
+    }
+
+    p {
+      color: #757575;
+      font-size: 12px;
+      font-weight: 100;
+      padding-top: .3rem;
+      padding-bottom: .3rem;
+      text-align: center;
+    }
+  }
+}
+
+.centered-image {
+  text-align: center;
+}
+
+.step-details {
+  h4, h5 {
+    text-align: center;
+  }
+}

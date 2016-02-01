@@ -2,65 +2,9 @@ body {
   font-family: $sans-serif;
 }
 
-nav {
-  padding: 2rem 0 2rem 0;
-  background-color: $black;
-
-  .avatar {
-    display: block;
-    position: relative;
-
-    img {
-      top: -1rem;
-      position: absolute;
-    }
-  }
-
-  .small-2.columns {
-    min-height: 1px;
-  }
-
-  .small-8.columns {
-//    background-color: green;
-  }
-
-
-  ul {
-    list-style-type: none;
-    margin-bottom: 0;
-    margin-left: 0;
-
-    li {
-      font-size: 18px;
-      font-weight: 100;
-      display: inline-block;
-      color: $black;
-      color: #FFFFFF;
-      margin-right: 2rem;
-    }
-
-    li a:hover, li a:focus, li a:visited {
-      color: #FFFFFF !important;
-    };
-
-    li a {
-      color: #FFFFFF;
-    }
-
-    li.current a {
-      border-bottom: 1px solid #FFFFFF;
-    }
-  }
-
-  ul:after {
-    clear: both;
-  };
-}
-
 .home {
   .row.intro, .row.divider {
     h1, h2 {
-      color: $text-black;
       font-size: 36px;
       font-weight: 300;
       text-align: center;
@@ -82,43 +26,7 @@ nav {
     padding-bottom: 150px;
   }
 
-  .row.divider {
-    &.my-process {
-      background-color: $blue;
-    }
-
-    &.recent-projects {
-      background-color: $green;
-    }
-
-    &.about-me {
-      background-color: $black;
-    }
-
-    margin: 0;
-    padding: 30px 0 60px 0;
-    position: relative;
-    max-width: initial;
-
-    .icon {
-      height: 60px;
-
-      img {
-        position: relative;
-        top: -105px;
-      }
-
-      text-align: center;
-    }
-
-    h2, p {
-      color: $text-white;
-    }
-  }
-
   .row.process {
-    padding: 100px 0 150px 0;
-
     .process-step {
       font-weight: 300;
       text-align: center;
@@ -158,9 +66,72 @@ nav {
   }
 }
 
+.row.divider {
+  &.my-process {
+    background-color: $blue;
+  }
+
+  &.recent-projects {
+    background-color: $green;
+  }
+
+  &.about-me {
+    background-color: $black;
+  }
+
+  h1, h2 {
+    color: $text-black;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.4;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 300;
+  }
+
+  margin: 0;
+  padding: 30px 0 60px 0;
+  position: relative;
+  max-width: initial;
+
+  .icon {
+    height: 60px;
+
+    img {
+      position: relative;
+      top: -105px;
+
+      &.small {
+        top: -54px;
+      }
+    }
+
+    text-align: center;
+  }
+
+  h2, p {
+    color: $text-white;
+  }
+}
+
+
+
 .project {
-  padding-bottom: 100px;
+  padding-bottom: 5rem;
+  margin-bottom: 6rem !important;
   border-bottom: 1px solid #979797;
+
+  &.last {
+    border-bottom: none;
+    margin-bottom: 0 !important;
+  }
 
   .logo {
     margin: 100px 0 80px 0;
@@ -168,11 +139,27 @@ nav {
 
   .logo-container {
     text-align: center;
+    margin-bottom: 3rem;
   }
 
   .row.description {
     .project-blurb {
       padding-left: 4rem;
+
+      .button {
+        font-weight: 200;
+        font-size: 16px;
+        background-color: $green;
+        padding: .7em 1.2em .8em 1.2em;
+        border-radius: 3px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
+      }
+    }
+
+    @media #{$small-down} {
+      div.project-icons {
+        padding-left: 4rem;
+      }
     }
 
     h3, p, li {
@@ -190,21 +177,23 @@ nav {
 
     ul.project-icons {
       list-style-type: none;
-      margin-left: 2rem;
-      padding-top: .5rem;
+      margin-left: 0;
+      padding-top: 1rem;
 
       li {
         margin-bottom: 1.2rem;
+        white-space: nowrap;
 
         .icon {
+          display: inline-block;
           width: 50px;
           text-align: center;
-          float: left;
           padding-right: 15px;
         }
 
         .caption {
-          float: left;
+          display: inline-block;
+          font-size: 14px;
         }
       }
 
@@ -217,7 +206,6 @@ nav {
     }
   }
 }
-
 
 .home .divider.about-me {
   margin-bottom: 70px;
@@ -237,6 +225,11 @@ nav {
   }
 }
 
+.row.section {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
 .section.about-me {
   .icon {
     text-align: center;
@@ -247,6 +240,13 @@ nav {
     }
   }
   
+}
+
+.big-icons {
+  margin-top: 1em;
+  @media #{$small-down} {
+    display: none;
+  }
 }
 
 .nav-anchor {
