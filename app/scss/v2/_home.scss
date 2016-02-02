@@ -8,10 +8,19 @@ body {
       font-size: 36px;
       font-weight: 300;
       text-align: center;
+
+      @media #{$small-down} {
+        font-size: 24px !important;
+      }
     }
 
     p {
       font-size: 24px;
+
+      @media #{$small-down} {
+        font-size: 16px !important;
+      }
+
       font-weight: 100;
       text-align: center;
       line-height: 1.4;
@@ -22,8 +31,14 @@ body {
   }
 
   .row.intro {
-    padding-top: 200px;
-    padding-bottom: 150px;
+    padding-top: 10em;
+    padding-bottom: 7em;
+  }
+
+  @media #{$small-down} {
+    .row.intro {
+      padding-top: 7em;
+    }
   }
 
   .row.process {
@@ -84,6 +99,10 @@ body {
     font-size: 36px;
     font-weight: 300;
     text-align: center;
+
+    @media #{$small-down} {
+      font-size: 24px !important;
+    }
   }
 
   p {
@@ -94,6 +113,10 @@ body {
     padding-left: 15%;
     padding-right: 15%;
     font-weight: 300;
+    
+    @media #{$small-down} {
+      font-size: 16px !important;
+    }
   }
 
   margin: 0;
@@ -126,7 +149,7 @@ body {
 .project {
   padding-bottom: 5rem;
   margin-bottom: 6rem !important;
-  border-bottom: 1px solid #979797;
+  border-bottom: 1px solid #D7D7D7;
 
   &.last {
     border-bottom: none;
@@ -146,6 +169,10 @@ body {
     .project-blurb {
       padding-left: 4rem;
 
+      @media #{$small-down} {
+        padding-left: 0.9375rem;
+      }
+
       .button {
         font-weight: 200;
         font-size: 16px;
@@ -156,11 +183,11 @@ body {
       }
     }
 
-    @media #{$small-down} {
-      div.project-icons {
-        padding-left: 4rem;
-      }
-    }
+//    @media #{$small-down} {
+//      div.project-icons {
+//        padding-left: 4rem;
+//      }
+//    }
 
     h3, p, li {
       font-family: $sans-serif;
@@ -226,8 +253,16 @@ body {
 }
 
 .row.section {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+
+  @media #{$small-down} {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    &.process {
+      margin-bottom: 7rem;
+    }
+  }
 }
 
 .section.about-me {

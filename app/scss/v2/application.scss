@@ -18,8 +18,37 @@
 }
 
 nav {
-  padding: 2rem 0 2rem 0;
+  padding: 2em 0 2em 0;
   background-color: $black;
+
+  @media #{$small-down} {
+    &.sub-nav-open {
+      padding-bottom: .5em !important;
+    }
+
+    ul {
+      li {
+        font-weight: 300 !important;
+        padding: 0 .3em 0 .3em !important;
+
+        a {
+          font-size: 12px;
+        }
+
+        .inner-nav ul li {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    padding: .5em 0 .5em 0;
+
+    .avatar {
+      display: none !important;
+    }
+  }
 
   &.sub-nav-open {
     padding-bottom: 3rem;
