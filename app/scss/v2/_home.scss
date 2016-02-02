@@ -124,8 +124,18 @@ body {
   position: relative;
   max-width: initial;
 
+  @media #{$small-down} {
+    padding-bottom: 40px;
+  }
+
   .icon {
     height: 60px;
+
+    &.small {
+      @media #{$small-down} {
+        height: 20px;
+      }
+    }
 
     img {
       position: relative;

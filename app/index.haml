@@ -6,8 +6,10 @@
     %meta{name: "google-site-verification", content:"3Ccn3zKixsjitl3gKva3cQS3hpFJdXbJAHZ411OuUSg"}
 
     %link{rel: "stylesheet", media: "screen", href: "./css/v2/application.css"}
+    %link{rel: "stylesheet", media: "screen", href: "./css/magnific-popup.css"}
     %script{src: "./js/jquery.min.js"}
     %script{src: "./js/jquery.nav.js"}
+    
     %script{src: "./js/foundation.min.js"}
     %script{src: "./js/foundation.equalizer.js"}
     %title
@@ -61,9 +63,9 @@
               .row.description
                 .small-12.medium-8.columns.project-blurb
                   %h3
-                    Usability Testing & Design
+                    Visual & Interaction Design, Usability Testing
                   %p
-                    Citrine wanted more people to upload data and documents to their materials data search platform. Our team set out to find out what was keeping people from uploading information, and then we designed and implemented improvements to the system.
+                    Citrine wanted to drive uploads to their platform. Through user testing, we discovered what was keeping users from signing up and uploading. We then re-designed a few key screens and recommended enhancements to their onboarding process.
                   %p
                     %a.button{href: "/citrine.html"}
                       Read more.
@@ -71,9 +73,9 @@
                   %ul.project-icons
                     %li
                       .icon
-                        %img{src: "../images/markup-brackets.png", width: "41", height: "31"}
+                        %img{src: "../images/cropping.png", width: "31", height: "31"}
                       .caption
-                        front-end development
+                        visual & interaction design
                     %li
                       .icon
                         %img{src: "../images/eye.png", width: "47", height: "31"}
@@ -81,9 +83,9 @@
                         usability testing
                     %li
                       .icon
-                        %img{src: "../images/cropping.png", width: "31", height: "31"}
+                        %img{src: "../images/markup-brackets.png", width: "41", height: "31"}
                       .caption
-                        wireframing & design
+                        front-end development
 
           .row.project
             .small-12.columns
@@ -94,16 +96,16 @@
               .row.description
                 .small-12.medium-8.columns.project-blurb
                   %h3
-                    Usability Research, Interaction Design & Prototyping
+                    Interaction Design & Mobile Prototyping
                   %p
-                    URX provides app makers with embeddable buttons and widgets which link one app to another. They wanted to get an idea of behavioral triggers that encouraged click-throughs, and they wanted to know what may have been preventing users from engaging with their app-to-app links.
+                    URX provides developers with tools & APIs to link apps together. We performed guerrilla usability testing and then used that behavioral insight to recommend design improvements to drive engagement.
                 .small-12.medium-4.columns.project-icons
                   %ul.project-icons
                     %li
                       .icon
                         %img{src: "../images/cropping.png", width: "31", height: "31"}
                       .caption
-                        wireframing & design
+                        interaction design
                     %li
                       .icon
                         %img{src: "../images/mobile-device.png", width: "20", height: "32"}
@@ -113,7 +115,7 @@
                       .icon
                         %img{src: "../images/eye.png", width: "47", height: "31"}
                       .caption
-                        usability testing
+                        behavioral testing
 
           .row.project.last
             .small-12.columns
@@ -126,7 +128,7 @@
                   %h3
                     User Research & Persona Development
                   %p
-                    Our team built fully-researched and validated personas for Noble Brewer. We performed extensive interviewing and behavioral research and synthesized it into detailed personas. Noble Brewer was able to use this insight to orient their marketing and product development efforts to the needs and goals of real people.
+                    Noble Brewer wanted a more complete customer personality profile to guide design decisions and product direction. Our team built fully-researched and validated personas for Noble Brewer. They were able to use this insight to orient their marketing and product development efforts to the needs and goals of real people.
                 .small-12.medium-4.columns.project-icons
                   %ul.project-icons
                     %li
@@ -152,7 +154,7 @@
         %h2
           My Process
         %p
-          I work with end-users and co-workers in an agile process iterating through research, design/prototyping, and development.
+          I work with end-users and co-workers in an agile process iterating through research, design, and development.
       .row.section.process
         .small-12.medium-4.columns
           .process-step
@@ -212,12 +214,12 @@
             %h3
               Professionally
             %p
-              With 10 years of experience as a software engineer at companies like Groupon, Rise, and Obtiva, I'm now enjoying the design side of things. I enjoy persistently iterating the process of research, interaction design, and prototyping to find the most practical and elegant solution. It is akin to the the art of sculpture, and it is fueled by the input and insight of many.
+              With 10 years of experience as a full-stack software engineer at companies like Groupon, Rise, and Obtiva, I'm now enjoying the design side of things. I love the process of research, interaction design, and prototyping to find the most practical and elegant solution. It is akin to the art of sculpture, and it's fueled by the input and insight of many.
           .blurb
             %h3
               For Fun
             %p
-              I love aviation and adventure sports. Over the years, I've steadily added pilot ratings to my logbook. Surfing, snowboarding, and kiteboarding are my jam, and paragliding is next. Northern California is a great place for all of these things!
+              I love aviation and adventure sports. I've steadily added pilot ratings to my logbook over the years. Surfing, snowboarding, and kiteboarding are my jam, and paragliding is next. Northern California is a great place to be for all of these things!
         .small-12.medium-4.columns.big-icons
           .icon
             %img{src: "../images/book.png", width: "65", height: "57"}
@@ -254,7 +256,13 @@
           %ul.footer-links
             %li
               %a{href: "https://www.linkedin.com/in/seaniams", target: "_blank"}
-                My LinkedIn profile is here.
+                Click here to see my LinkedIn profile.
+
+    %script{src: "./js/magnific-popup.min.js"}
 
 :javascript
   $('#nav').onePageNav();
+
+  $(document).ready(function() {
+    $('.magnific').magnificPopup({type:'image'});
+  });

@@ -63,6 +63,12 @@ gulp.task('fonts', ['clean'], function() {
   .pipe(gulp.dest('./build/fonts'));
 });
 
+gulp.task('css', ['clean'], function() {
+  gulp.src('./app/lib/css/**/*.css')
+  .pipe(gulp.dest('./build/css'));
+});
+
+
 gulp.task('server', function() {
   connect.server({
     root: 'build',
@@ -76,9 +82,9 @@ gulp.task('server', function() {
 //
 // gulp.task('default', ['server', 'watch']);
 
-gulp.task('default', ['haml', 'sass', 'js', 'images', 'fonts', 'bower', 'server']);
+gulp.task('default', ['haml', 'css', 'sass', 'js', 'images', 'fonts', 'bower', 'server']);
 
-gulp.watch('app/**/*', ['haml', 'sass', 'js', 'images', 'fonts', 'bower']);
+gulp.watch('app/**/*', ['haml', 'css', 'sass', 'js', 'images', 'fonts', 'bower']);
 
 gulp.watch('app/**/*', function(event) {
   console.log('> > > ' + event.path + ' ' + event.type);

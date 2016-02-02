@@ -6,6 +6,7 @@
     %meta{name: "google-site-verification", content:"3Ccn3zKixsjitl3gKva3cQS3hpFJdXbJAHZ411OuUSg"}
 
     %link{rel: "stylesheet", media: "screen", href: "./css/v2/application.css"}
+    %link{rel: "stylesheet", media: "screen", href: "./css/magnific-popup.css"}
     %script{src: "./js/jquery.min.js"}
     %script{src: "./js/jquery.nav.js"}
     %script{src: "./js/foundation.min.js"}
@@ -70,7 +71,7 @@
           %h1
             Citrine Informatics
           %p.description
-            An analytics platform for advanced materials research & development.
+            An analytics platform for advanced materials R & D.
           %p.tags
             Visual Design, Interaction Design, Usability Testing
       .row.project-intro
@@ -79,21 +80,21 @@
             %h3
               The Challenge
             %p
-              Citrine wanted more people to upload data and documents to their materials data search platform. We set out to find what was keeping users from signing up and uploading data. We then re-designed a few key screens, and recommended enhancements to their on-boarding process.
+              Citrine wanted to drive uploads to their platform. Through user testing, we discovered what was keeping users from signing up and uploading. We then re-designed a few key screens and recommended enhancements to their onboarding process.
           .small-12.medium-6.columns.blurb
             %h3
               My Role
             %p
-              I conducted remote usability testing & analysis with a fellow designer, and I consulted with Citrine to determine their business needs. I also redesigned the entire Citrination landing page.
+              Along with a fellow designer, I conducted remote usability testing & analysis. Together we designed improvements to the onboarding process. I also redesigned the Citrination landing page.
         .row
           .small-12.columns.blurb
             %h3
               The Process
-            %img.main{src: "../images/citrination-process.png", width: "945", height: "236"}
+            %img.main.magnific{src: "../images/citrination-process.png", width: "945", height: "236"}
 
       .row.divider.recent-projects
         %a.nav-anchor
-        .icon
+        .icon.small
           %img.small{src: "../images/step-1.png", width: "54", height: "54"}
         %h2
           Usability Testing & Analysis
@@ -103,7 +104,7 @@
       .row.project-step
         .row
           .small-12.medium-6.columns.image-blurb
-            %img{src: "../images/remote-usability.png", width: "461", height: "228"}
+            %img.magnific{src: "../images/remote-usability.png", width: "461", height: "228"}
             %p
               Conducting remote usability test via Google Hangouts.
           .small-12.medium-6.columns.blurb
@@ -111,7 +112,7 @@
               %img.icon{src: "../images/eye-34.png", width: "34", height: "34"}
               Remote Usability Testing
             %p
-              Our team conducted 5 video-recorded usability tests to identify usage patterns, common frustrations, and points of confusion in the document & data upload process. This step in the process was crucial in uncovering the real issues, and it helped us to establish priority for the problems at hand.
+              Our team conducted 5 video-recorded usability tests to identify usage patterns, common frustrations, and points of confusion in the document & data upload process. This step was crucial in uncovering the real issues, and it guided us in prioritizing the problems at hand.
 
         .row
           .small-12.medium-6.columns.blurb
@@ -129,10 +130,10 @@
                   Error messages were ignored during onboarding.
               %li
                 %span
-                  Users were confusioned about what to upload and why.
+                  Users were confused about what to upload and why.
 
           .small-12.medium-6.columns.image-blurb
-            %img{src: "../images/citrine-affinity-2.png", width: "458", height: "290"}
+            %img.magnific{src: "../images/citrine-affinity-2.png", width: "458", height: "290"}
             %p
               Me and teammate Laura mapping the results.
 
@@ -146,18 +147,18 @@
               Prioritizing The Issues
             %ol
               %li
-                We want users to be able to sign up in seconds. Our testing showed that it was taking users an average of 3 sign-up attempts to get into the system.
+                Our testing showed that users were taking an average of 3 sign-up attempts to get into the system. We want users to be able to sign up in seconds.
               %li
-                Once we make sign-up easier, we want to encourage people to sign up and begin contributing to the platform. We’ll do this by introducing a few key selling points via landing page.
+                We re-designed the Citrination landing page to encourage users to sign up and contribute data.
 
       .row.divider.recent-projects
         %a.nav-anchor
-        .icon
+        .icon.small
           %img.small{src: "../images/step-2.png", width: "54", height: "54"}
         %h2
           Design
         %p
-          After analyzing and prioritizing our insights from usability testing, we set out to make some key design improvements.
+          After analyzing and prioritizing insights from usability testing, we made some key design improvements.
 
       .row.project-step.with-divider
         .row
@@ -170,7 +171,7 @@
               The Original Sign-up Flow
         .row
           .small-12.columns.centered-image
-            %img{src: "../images/citrine-flow-1.png", width: "939", height: "636"}
+            %img.magnific{src: "../images/citrine-flow-1.png", "data-mfp-src" => "../images/citrine-flow-1-zoomed.png", width: "939", height: "636"}
 
         .row.short
           .small-12.columns
@@ -178,7 +179,7 @@
               Suggestion #1 - Streamline the sign-up flow.
         .row
           .small-12.columns.centered-image
-            %img{src: "../images/citrine-flow-2.png", width: "939", height: "640"}
+            %img.magnific{src: "../images/citrine-flow-2.png", "data-mfp-src" => "../images/citrine-flow-2-zoomed.png", width: "939", height: "640"}
 
         .row.short
           .small-12.columns
@@ -186,12 +187,12 @@
               Suggestion #2 - Don't let users miss the confirmation step.
         .row
           .small-12.medium-6.columns
-            %img{src: "../images/citrine-signup-confirm.png", width: "459", height: "267"}
+            %img.magnific{src: "../images/citrine-signup-confirm.png", width: "459", height: "267"}
           .small-12.medium-6.columns.blurb
             %h3
               A screen for the confirmation message.
             %p
-              This was the easier-to-implement solution. Previously, an easily overlooked message blended into the header. This caused users to ignore an essential prompt telling them that they must confirm their e-mail address before signing in. Now, there’s a dedicated page for this message so that it’s not missed.
+              This was the easier-to-implement solution. Instead of having an easily-dismissible pop-up message, there’s a dedicated page telling them to confirm their e-mail address before continuing on. This will not be missed.
 
       .row.project-step
         .row
@@ -204,7 +205,7 @@
               Landing Page - Before Redesign
         .row
           .small-12.columns.centered-image
-            %img{src: "../images/citrination-landing-before.png", width: "938", height: "319"}
+            %img.magnific{src: "../images/citrination-landing-before.png", "data-mfp-src" => "../images/citrination-landing-before-mac-zoomed.png", width: "938", height: "319"}
 
         .row.short
           .small-12.columns
@@ -212,7 +213,7 @@
               Landing Page - After Redesign
         .row
           .small-12.columns.centered-image
-            %img{src: "../images/citrination-landing-after.png", width: "939", height: "1980"}
+            %img.magnific{src: "../images/citrination-landing-after.png", "data-mfp-src" => "../images/citrination-landing-zoomed.png", width: "939", height: "1980"}
 
     .footer
       .row
@@ -242,4 +243,15 @@
           %ul.footer-links
             %li
               %a{href: "https://www.linkedin.com/in/seaniams", target: "_blank"}
-                My LinkedIn profile is here.
+                Click here to see my LinkedIn profile.
+
+    %script{src: "./js/magnific-popup.min.js"}
+
+:javascript
+  $(document).ready(function() {
+    $('.magnific').magnificPopup({type:'image', image: {titleSrc: function(item) {
+      if (item.el.next() !== undefined) {
+        return item.el.next().html();
+      }
+    }}});
+  });
